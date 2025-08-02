@@ -1,0 +1,2104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CRM.Api.Model</name>
+    </assembly>
+    <members>
+        <member name="T:CRM.Api.Model.Account.ChangePasswordRequest">
+            <summary>
+            Request to change user password
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.ChangePasswordRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.ChangePasswordRequest.oldPassword">
+            <summary>
+            The current password encoded by MD5        
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.ChangePasswordRequest.newPassword">
+            <summary>
+            The new password encoded by MD5       
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.ChangePasswordResponse">
+            <summary>
+            Response to change user password
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.ChangePasswordResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.GetRequest">
+            <summary>
+            Request to get the current user's information
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.GetRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.GetResponse">
+            <summary>
+            Response to get the current user's information
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.GetResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.GetResponse.Id">
+            <summary>
+            User ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.GetResponse.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.GetResponse.fullname">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.GetResponse.mobileNo">
+            <summary>
+            Mobile Number
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:CRM.Api.Model.Account.LoginRequest" -->
+        <member name="M:CRM.Api.Model.Account.LoginRequest.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.LoginRequest.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.LoginRequest.pwd">
+            <summary>
+            The password encoded by MD5        
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.LoginResponse">
+            <summary>
+            Response to login
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.LoginResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.LoginResponse.token">
+            <summary>
+            Usre Token
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.LogoutRequest">
+            <summary>
+            Request to log out the current user
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.LogoutRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.LogoutResponse">
+            <summary>
+            Response to log out the current user
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.LogoutResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.UpdateRequest">
+            <summary>
+            Request to update the current user's information
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.UpdateRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.UpdateRequest.fullname">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Account.UpdateRequest.mobileNo">
+            <summary>
+            Mobile Number
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Account.UpdateResponse">
+            <summary>
+            Response to update the current user's information
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Account.UpdateResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.BaseRequest">
+            <summary>
+            WebApi Request Base Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.apiVersion">
+            <summary>
+            Api Version
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.apiWay">
+            <summary>
+            Api Way
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.granteeGuid">
+            <summary>
+            Grantee Guid
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.userToken">
+            <summary>
+            User Token
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.timeStamp">
+            <summary>
+            Timestamp
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.nonce">
+            <summary>
+            Random String
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest.sign">
+            <summary>
+            Sign
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.BaseRequest`1">
+            <summary>
+            WebApi Request Base Class With Generic Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseRequest`1.body">
+            <summary>
+            Request Body
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.MerchantInfo">
+            <summary>
+            Merchant Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.MerchantInfo.Guid">
+            <summary>
+            Current Merchant Guid
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.MerchantInfo.Name">
+            <summary>
+            Current Merchant Name
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.MerchantInfo.Type">
+            <summary>
+            Current Merchant Type
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.MerchantInfo.UserGuid">
+            <summary>
+            Current Merchant Manager User Guid
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.UserInfo">
+            <summary>
+            User Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Id">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Guid">
+            <summary>
+            User Guid
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Name">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Mobile">
+            <summary>
+            User Mobile
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.UserInfo.Token">
+            <summary>
+            User Token
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.RoleInfo">
+            <summary>
+            Role Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.RoleInfo.Guid">
+            <summary>
+            Role GUID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.RoleInfo.Type">
+            <summary>
+            Role Type
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.RoleInfo.Code">
+            <summary>
+            Role Code
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.RoleInfo.Name">
+            <summary>
+            Role Name
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.GranteeInfo">
+            <summary>
+            Grantee Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CurGrannteeKey">
+            <summary>
+            Current Granntee Key
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CheckPowerDesc">
+            <summary>
+            Check Power Desc
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CurMerchant">
+            <summary>
+            Current Merchant Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CurUser">
+            <summary>
+            Current User Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CurRoles">
+            <summary>
+            Current Role Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.GranteeInfo.CurUserMerchant">
+            <summary>
+            Merchant Info of Current User
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.BaseResponse">
+            <summary>
+            WebApi Response Base Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.BaseResponse.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseResponse.code">
+            <summary>
+            Response Result Code
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseResponse.desc">
+            <summary>
+            Response Result Description
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.BaseResponse`1">
+            <summary>
+            WebApi Response Base Class With Generic Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.BaseResponse`1.body">
+            <summary>
+            Response Body
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ErrorMessage">
+            <summary>
+            WebApi Error Message Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ErrorMessage.status">
+            <summary>
+            Status Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ErrorMessage.title">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ErrorMessage.errors">
+            <summary>
+            Error List
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Common.Configuration">
+            <summary>
+            Configuration Info
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.MyCookieContainer">
+            <summary>
+            CookieContainer
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.MyEncoding">
+            <summary>
+            Encoding
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.ApiUrl">
+            <summary>
+            ApiUrl
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.ApiVersion">
+            <summary>
+            ApiVersion
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.ApiWay">
+            <summary>
+            ApiWay
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.GranteeGuid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.GranteeKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Common.Configuration.UserToken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Common.Configuration.#cctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Configurations.GetRequest">
+            <summary>
+            Request of Getting Configurations
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Configurations.GetRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Configurations.GetResponse">
+            <summary>
+            Response of Getting Configurations
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Configurations.GetResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Configurations.GetResponse.smsAccessToken">
+            <summary>
+            SMS Access Token
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Configurations.UpdateRequest">
+            <summary>
+            Request of Updating Configurations
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Configurations.UpdateRequest.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Configurations.UpdateRequest.smsAccessToken">
+            <summary>
+            SMS Access Token
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Configurations.UpdateResponse">
+            <summary>
+            Response of Updating Configurations
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Configurations.UpdateResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Core.ApiClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Core.ApiClient.Start``1(CRM.Api.Model.BaseRequest)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CRM.Api.Model.Core.ApiHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Core.ApiHelper.RequestAsync(System.Net.Http.HttpMethod,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="apiMethod"></param>
+            <param name="apiUrl"></param>
+            <param name="apiRequest"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CRM.Api.Model.File.GetRequest.t">
+            <summary>
+            尺寸类型：mw、mh
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.GetRequest.w">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.GetRequest.h">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.GetRequest.p">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListRequest.dir">
+            <summary>
+            目录名
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListRequest.path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListRequest.order">
+            <summary>
+            排序依据
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListResponse.moveup_dir_path">
+            <summary>
+            上一级目录路径
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListResponse.current_dir_path">
+            <summary>
+            当前目录路径
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListResponse.current_url">
+            <summary>
+            当前URL
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListResponse.total_count">
+            <summary>
+            文件总数
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.ListResponse.file_list">
+            <summary>
+            文件列表
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.File.FileItem">
+            <summary>
+            文件信息
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.is_dir">
+            <summary>
+            是否目录
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.has_file">
+            <summary>
+            是否含文件
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.filesize">
+            <summary>
+            文件尺寸
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.is_photo">
+            <summary>
+            是否照片
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.filetype">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.filename">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.FileItem.datetime">
+            <summary>
+            最近更新时间
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.UploadRequest.uploadMode">
+            <summary>
+            上传模式
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.UploadRequest.uploadName">
+            <summary>
+            文件域名称
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.UploadRequest.typeName">
+            <summary>
+            文件类型编码：flash、media、image、file
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.UploadResponse.url">
+            <summary>
+            文件完全URL
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.File.UploadResponse.path">
+            <summary>
+            文件相对路径
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ForwardingRecords.ListRequest">
+            <summary>
+            Request of Listing Forwarding Records
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ForwardingRecords.ListRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.smsId">
+            <summary>
+            SMS ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.mobileNo">
+            <summary>
+            Forwarding Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.fromForwardingTime">
+            <summary>
+            From Forwarding Time (yyyy-MM-dd)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.toForwardingTime">
+            <summary>
+            To Forwarding Time (yyyy-MM-dd)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ListRequest.state">
+            <summary>
+            Sending State(-1: Deleted, 0: Unsent, 1: Sending, 2: Succeeded, 3: Failed)
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ForwardingRecords.ListResponse">
+            <summary>
+            Response of Listing Forwarding Records
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ForwardingRecords.ListResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ForwardingRecords.ForwardingRecord">
+            <summary>
+            Forwarding Record
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.id">
+            <summary>
+            Record ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.mobileNo">
+            <summary>
+            Forwarding Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.account">
+            <summary>
+            Forwarding User Name
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.forwardingTime">
+            <summary>
+            Forwarding Time
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.state">
+            <summary>
+            Sending State(-1: Deleted, 0: Unsent, 1: Sending, 2: Succeeded, 3: Failed)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ForwardingRecords.ForwardingRecord.forwardingResult">
+            <summary>
+            Forwarding Result
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Library.Signification">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Library.Signification.Sign(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strPlainText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.Signification.VerifySign(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strCryptText"></param>
+            <param name="strPlainText"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CRM.Api.Model.Library.TimeConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertTimestampToDateTime(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="longTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertDateTimeToTimestamp(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="dtTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertStringToLong(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertLongToString(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="longTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertDateTimeToLong(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="dtTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRM.Api.Model.Library.TimeConverter.ConvertLongToDateTime(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="longTime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Account.ChangePasswordRequest">
+            <summary>
+            Change Password Request Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Manager.Account.ChangePasswordRequest.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Account.ChangePasswordRequest.oldPassword">
+            <summary>
+            Old Password(MD5 32)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Account.ChangePasswordRequest.newPassword">
+            <summary>
+            New Password(MD5 32)    
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Account.LoginRequest">
+            <summary>
+            Login Request Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Manager.Account.LoginRequest.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Account.LoginRequest.account">
+            <summary>
+            Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Account.LoginRequest.pwd">
+            <summary>
+            Password        
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Account.LoginResponse">
+            <summary>
+            Login Response Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Manager.Account.LoginResponse.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Account.LoginResponse.granteeInfo">
+            <summary>
+            GranteeInfo
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Category.DeleteRequest">
+            <summary>
+            Cat Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Category.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Category.ListComboboxRequest">
+            <summary>
+            Cat List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Category.ListRequest">
+            <summary>
+            Cat List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Category.ListTreeRequest">
+            <summary>
+            List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Category.PassRequest">
+            <summary>
+            Cat Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Category.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Category.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.DeleteRequest">
+            <summary>
+            Config Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Config.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.GetRequest">
+            <summary>
+            Config Get Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Config.GetRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.ListComboboxRequest">
+            <summary>
+            Cat List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.ListRequest">
+            <summary>
+            Config List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.ListTreeRequest">
+            <summary>
+            Config List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Config.PassRequest">
+            <summary>
+            Config Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Config.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Config.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Content.DeleteRequest">
+            <summary>
+            Content Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Content.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Content.GetRequest">
+            <summary>
+            Content Get Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Content.GetRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Content.ListRequest">
+            <summary>
+            Content List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Content.PassRequest">
+            <summary>
+            Content Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Content.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Content.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Enums.DeleteRequest">
+            <summary>
+            Enum Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Enums.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Enums.ListComboboxRequest">
+            <summary>
+            Enum List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Enums.ListRequest">
+            <summary>
+            Enum List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Enums.ListTreeRequest">
+            <summary>
+            List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Enums.PassRequest">
+            <summary>
+            Enum Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Enums.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Enums.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.ListBaseRequest">
+            <summary>
+            List Request Base Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Manager.ListBaseRequest.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.page">
+            <summary>
+            Page Index
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.rows">
+            <summary>
+            Page Size
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.sort">
+            <summary>
+            Sort By
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.order">
+            <summary>
+            Sort Order: ASC, DESC
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.parentId">
+            <summary>
+            Parent Id
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListBaseRequest.parentGuid">
+            <summary>
+            Parent GUID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.ListComboboxBaseRequest">
+            <summary>
+            ListCombobox Request Base Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListComboboxBaseRequest.idField">
+            <summary>
+            ID Field
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListComboboxBaseRequest.showDefault">
+            <summary>
+            If Show Default Item
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListComboboxBaseRequest.defaultText">
+            <summary>
+            Default Text: UNLIMITED, NONE
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListComboboxBaseRequest.include">
+            <summary>
+            Include ID List, Splitted By ","
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.ListComboboxBaseRequest.exclude">
+            <summary>
+            Exclude ID List, Splitted By ","
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Module.DeleteRequest">
+            <summary>
+            Module Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Module.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Module.ListComboboxRequest">
+            <summary>
+            Cat List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Module.ListRequest">
+            <summary>
+            Content List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Module.ListTreeRequest">
+            <summary>
+            Module List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Operation.ListRequest">
+            <summary>
+            Operation List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.OrderCounters.ListRequest">
+            <summary>
+            OrderCounters List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Orders.DeleteRequest">
+            <summary>
+            Orders Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Orders.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Orders.ImportRequest.excel">
+            <summary>
+            Excel文件路径
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Orders.ListRequest">
+            <summary>
+            Orders List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Orders.ListTreeRequest">
+            <summary>
+            Orders List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Orders.PassRequest">
+            <summary>
+            Orders Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Orders.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Orders.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Orders.SetRequest">
+            <summary>
+            Orders Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Orders.SetRequest.orderId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Picture.DeleteRequest">
+            <summary>
+            Picture Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Picture.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Picture.GetRequest">
+            <summary>
+            Picture Get Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Picture.GetRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Picture.ListRequest">
+            <summary>
+            Picture List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Picture.PassRequest">
+            <summary>
+            Picture Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Picture.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Picture.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Power.ListRequest">
+            <summary>
+            Power List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Products.DeleteRequest">
+            <summary>
+            Products Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Products.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Products.ListComboboxRequest">
+            <summary>
+            Products List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Products.ListRequest">
+            <summary>
+            Products List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Products.PassRequest">
+            <summary>
+            Products Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Products.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Products.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.ListRequest.parentGuid">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.ListRequest.table">
+            <summary>
+            Table
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.ListRequest.type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.ListResponse.list">
+            <summary>
+            Property List
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.extCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.extName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.extDesc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.extFormType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.extFormRule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Property.Item.propValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.CreateRequest`1">
+            <summary>
+            Role Create Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.CreateRequest`1.grantingPowerGuidList">
+            <summary>
+            Power GUID List To Grant
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.CreateRequest`1.revokingPowerGuidList">
+            <summary>
+            Power GUID List To Revoke
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.DeleteRequest">
+            <summary>
+            Role Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.ListComboboxRequest">
+            <summary>
+            Role List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.ListRequest">
+            <summary>
+            Role List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.ListTreeRequest">
+            <summary>
+            Role List Tree Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.ListTreeRequest.showAll">
+            <summary>
+            If show all roles including the disabled
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Role.UpdateRequest`1">
+            <summary>
+            Role Update Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.UpdateRequest`1.grantingPowerGuidList">
+            <summary>
+            Power GUID List To Grant
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Role.UpdateRequest`1.revokingPowerGuidList">
+            <summary>
+            Power GUID List To Invoke
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.StockCounters.ListRequest">
+            <summary>
+            StockCounters List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stocks.DeleteRequest">
+            <summary>
+            Stocks Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stocks.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stocks.ImportRequest.excel">
+            <summary>
+            Excel文件路径
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stocks.ListRequest">
+            <summary>
+            Stocks List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stocks.ListTreeRequest">
+            <summary>
+            Stocks List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stocks.PassRequest">
+            <summary>
+            Stocks Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stocks.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stocks.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stocks.UpdateRequest">
+            <summary>
+            Stocks Update Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stores.DeleteRequest">
+            <summary>
+            Stores Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stores.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stores.ListComboboxRequest">
+            <summary>
+            Stores List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stores.ListRequest">
+            <summary>
+            Stores List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stores.ListTreeRequest">
+            <summary>
+            Stores List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Stores.PassRequest">
+            <summary>
+            Stores Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stores.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Stores.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.TableExt.DeleteRequest">
+            <summary>
+            TableExt Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.TableExt.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.TableExt.GetRequest">
+            <summary>
+            TableExt Get Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.TableExt.GetRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.TableExt.ListRequest">
+            <summary>
+            TableExt List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.TableExt.PassRequest">
+            <summary>
+            TableExt Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.TableExt.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.TableExt.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.User.DeleteRequest">
+            <summary>
+            User Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.User.GetRequest">
+            <summary>
+            User Get Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.GetRequest.id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.ImportRequest.excel">
+            <summary>
+            Excel文件路径
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.User.ListRequest">
+            <summary>
+            User List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.User.PassRequest">
+            <summary>
+            User Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.User.ReSetRequest">
+            <summary>
+            User ReSet Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.User.ReSetRequest.idList">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Warehouses.DeleteRequest">
+            <summary>
+            Warehouses Delete Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Warehouses.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Warehouses.ListComboboxRequest">
+            <summary>
+            Warehouses List Combobox Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Warehouses.ListRequest">
+            <summary>
+            Warehouses List Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Warehouses.ListTreeRequest">
+            <summary>
+            Warehouses List Tree Request
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Manager.Warehouses.PassRequest">
+            <summary>
+            Warehouses Pass Request
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Warehouses.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Manager.Warehouses.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.PageBaseRequest">
+            <summary>
+            WebApi Page Request Base Class
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.PageBaseRequest.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.PageBaseRequest.pageIndex">
+            <summary>
+            Page Index
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.PageBaseRequest.pageSize">
+            <summary>
+            Page Size
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.PageBaseResponse`1">
+            <summary>
+            WebApi Page Response Base Class
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.PageBaseResponse`1.totalRecord">
+            <summary>
+            Total Record Count
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.PageBaseResponse`1.totalPage">
+            <summary>
+            Total Page Count
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.PageBaseResponse`1.dataList">
+            <summary>
+            数据列表
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivedSMSs.ListRequest">
+            <summary>
+            Request of Listing Received SMS
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ReceivedSMSs.ListRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.customerMobileNo">
+            <summary>
+            Customer Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.receivingMobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.receivingDeviceIdentity">
+            <summary>
+            Receiving Device Identity
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.fromRecievedTime">
+            <summary>
+            From Received Time (yyyy-MM-dd)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.toRecievedTime">
+            <summary>
+            To Received Time (yyyy-MM-dd)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ListRequest.state">
+            <summary>
+            Processing State of Received SMS (-1: Deleted, 0: Unprocessed, 1: Processing, 2: Processed)
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivedSMSs.ListResponse">
+            <summary>
+            Response of Listing Received SMS
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ReceivedSMSs.ListResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivedSMSs.ReceivedSMS">
+            <summary>
+            Received SMS
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.id">
+            <summary>
+            SMS ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.customerMobileNo">
+            <summary>
+            Customer's Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.receivingMobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.content">
+            <summary>
+            SMS Content
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.receivedTime">
+            <summary>
+            Received Time
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivedSMSs.ReceivedSMS.state">
+            <summary>
+            Processing State (-1: Deleted, 0: Unprocessed, 1: Processing, 2: Processed)
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.CreateRequest">
+            <summary>
+            Request to create a receiving mobile
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.CreateRequest.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.CreateRequest.mobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.CreateRequest.userIdList">
+            <summary>
+            User ID List to assign to
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.DeleteRequest">
+            <summary>
+            Request to Delete one or more receiving mobiles
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.GetRequest">
+            <summary>
+            Request to getting a receiving mobile
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.GetRequest.id">
+            <summary>
+            receiving mobile ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.GetResponse">
+            <summary>
+            Response of getting a receiving mobile
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ReceivingMobiles.GetResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.GetResponse.mobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.GetResponse.state">
+            <summary>
+            Assignment State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.GetResponse.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.GetResponse.assignedUsers">
+            <summary>
+            Assigned users
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.AssignedUser">
+            <summary>
+            Assigned user information
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.AssignedUser.Account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.ListRequest">
+            <summary>
+            Request to list receiving mobiles
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ListRequest.mobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ListRequest.state">
+            <summary>
+            Assignment State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ListRequest.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.ListResponse">
+            <summary>
+            Response of listing receiving mobiles
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.ReceivingMobiles.ListResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.ReceivingPhone">
+            <summary>
+            receiving mobile information
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ReceivingPhone.id">
+            <summary>
+            receiving mobile ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ReceivingPhone.mobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ReceivingPhone.state">
+            <summary>
+            Assignment State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.ReceivingPhone.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.PassRequest">
+            <summary>
+            Request to pass a receiving mobile(s)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.ReceivingMobiles.UpdateRequest">
+            <summary>
+            Request to update a receiving mobile
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.UpdateRequest.deviceIdentity">
+            <summary>
+            Device Identity
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.UpdateRequest.mobileNo">
+            <summary>
+            Receiving Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.ReceivingMobiles.UpdateRequest.userIdList">
+            <summary>
+            User ID List to assign to
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.CreateRequest">
+            <summary>
+            Request to create a user
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.CreateRequest.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.CreateRequest.fullName">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.CreateRequest.password">
+            <summary>
+            User Password
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.CreateRequest.mobileNo">
+            <summary>
+            User Mobile Number
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.DeleteRequest">
+            <summary>
+            Request to Delete one or more users
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.DeleteRequest.idList">
+            <summary>
+            ID List To Delete
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.GetRequest">
+            <summary>
+            Request to getting a user
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetRequest.id">
+            <summary>
+            User ID
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.GetResponse">
+            <summary>
+            Response of getting a user
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Users.GetResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.fullName">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.mobileNo">
+            <summary>
+            User Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.state">
+            <summary>
+            User State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.createdTime">
+            <summary>
+            Created Time
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.GetResponse.assignedPhones">
+            <summary>
+            Assigned phones
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.AssignedPhone">
+            <summary>
+            Assigned phone information
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.AssignedPhone.MobileNo">
+            <summary>
+            Mobile no
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.ImportRequest">
+            <summary>
+            Request to import users
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ImportRequest.excelUrl">
+            <summary>
+            Excel URL
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.ListRequest">
+            <summary>
+            Request to list users
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ListRequest.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ListRequest.fullName">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ListRequest.mobileNo">
+            <summary>
+            User Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ListRequest.state">
+            <summary>
+            User State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.ListResponse">
+            <summary>
+            Response of listing users
+            </summary>
+        </member>
+        <member name="M:CRM.Api.Model.Users.ListResponse.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.User">
+            <summary>
+            User Information
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.id">
+            <summary>
+            User ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.account">
+            <summary>
+            User Account
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.fullName">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.mobileNo">
+            <summary>
+            User Mobile Number
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.state">
+            <summary>
+            User State (-1: Deleted, 0: Disabled, 1: Enabled)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.User.createdTime">
+            <summary>
+            Created Time
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.PassRequest">
+            <summary>
+            Request to pass a user(s)
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.PassRequest.idList">
+            <summary>
+            ID List To Pass
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.PassRequest.state">
+            <summary>
+            State: 1=>Pass, 0=>Unpass
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.ResetRequest">
+            <summary>
+            Request to reset users' password
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.ResetRequest.idList">
+            <summary>
+            ID List To Reset Password
+            </summary>
+        </member>
+        <member name="T:CRM.Api.Model.Users.UpdateRequest">
+            <summary>
+            Request to update a user
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.UpdateRequest.id">
+            <summary>
+            User ID
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.UpdateRequest.fullName">
+            <summary>
+            User Fullname
+            </summary>
+        </member>
+        <member name="P:CRM.Api.Model.Users.UpdateRequest.mobileNo">
+            <summary>
+            User Mobile Number
+            </summary>
+        </member>
+    </members>
+</doc>
