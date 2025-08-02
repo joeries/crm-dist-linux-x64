@@ -1,0 +1,74 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": false,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "图片",
+    "IdKeyName": "img_id",
+    "GuidKeyName": "",
+    "TypeFieldName": "",
+    "ForeignKeyName": "obj_guid",
+    "SearchAttr": "style=\"height:0px;line-height:0px;\"",
+    "Tip": ""
+  },
+  "Search": [
+    {
+      "Items": [
+        
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "上传图片",
+          "Desc": "图片宽高比2:1,推荐大小750px*375px",
+          "Field": "img_path",
+          "DataType": "string",
+          "FormType": "image",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlenth=\"200\""
+        },
+        {
+          "Alias": "图片标题",
+          "Desc": "请输入图片标题",
+          "Field": "img_title",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlenth=\"100\""
+        },
+        {
+          "Alias": "图片说明",
+          "Desc": "请输入图片说明",
+          "Field": "img_desc",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlenth=\"200\""
+        },
+        {
+          "Alias": "图片链接",
+          "Desc": "请输入图片链接",
+          "Field": "img_url",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlenth=\"200\""
+        },
+        {
+          "Alias": "图片序号",
+          "Desc": "请输入图片序号",
+          "Field": "img_order",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" min=\"0\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

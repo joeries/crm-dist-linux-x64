@@ -1,0 +1,152 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": false,
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasImport": true,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": true,
+    "ObjectName": "用户",
+    "IdKeyName": "user_id",
+    "GuidKeyName": "user_guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:70px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "Users.xlsx",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "账号",
+          "Desc": "请输入登录账号",
+          "Field": "account",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"20\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "姓名",
+          "Desc": "请输入用户姓名",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "手机",
+          "Desc": "请输入手机号码",
+          "Field": "mobile",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"11\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "邮箱",
+          "Desc": "请输入电子邮箱",
+          "Field": "email",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        }
+      ]
+    },
+    {
+      "Items": [
+        {
+          "Alias": "部门",
+          "Desc": "请选择所在部门",
+          "Field": "deptGuid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Department/ListCombobox&showDefault=true&defaultText=UnLimited\"",
+          "Visible": false
+        },
+        {
+          "Alias": "角色",
+          "Desc": "请选择所属角色",
+          "Field": "roleGuid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Role/ListCombobox&showDefault=true&defaultText=UnLimited\""
+        },
+        {
+          "Alias": "状态",
+          "Desc": "请选择用户状态",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "state",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "登录账号",
+          "Desc": "请输入登录账号",
+          "Field": "user_name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"20\""
+        },
+        {
+          "Alias": "登录密码",
+          "Desc": "请输入登录密码",
+          "Field": "user_pwd",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"32\""
+        },
+        {
+          "Alias": "用户姓名",
+          "Desc": "请输入用户姓名",
+          "Field": "user_full_name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        },
+        {
+          "Alias": "手机号码",
+          "Desc": "请输入手机号码",
+          "Field": "user_mobile",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        },
+        {
+          "Alias": "电子邮箱",
+          "Desc": "请输入电子邮箱",
+          "Field": "user_email",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        },
+        {
+          "Alias": "所在部门",
+          "Desc": "请选择所在部门",
+          "Field": "dept_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Department/ListCombobox&showDefault=true\"",
+          "Visible": false
+        },
+        {
+          "Alias": "所属角色",
+          "Desc": "请选择所属角色",
+          "Field": "role_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Role/ListCombobox&showDefault=true\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

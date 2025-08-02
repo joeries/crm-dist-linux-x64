@@ -1,0 +1,88 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "仓库",
+    "IdKeyName": "id",
+    "GuidKeyName": "guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "唯一标识",
+          "Desc": "请输入唯一标识",
+          "Field": "identification",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "仓库编码",
+          "Desc": "请输入仓库编码",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "仓库名称",
+          "Desc": "请输入仓库名称",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "仓库状态",
+          "Desc": "请选择仓库状态",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "state",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "唯一标识",
+          "Desc": "请输入唯一标识，为空将自动生成",
+          "Field": "identification",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "仓库编码",
+          "Desc": "请输入仓库编码",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "仓库名称",
+          "Desc": "请输入仓库名称",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" maxlength=\"50\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

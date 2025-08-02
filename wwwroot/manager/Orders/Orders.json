@@ -1,0 +1,260 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": true,
+    "PassYesText": "发货",
+    "PassNoText": "退货",
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "HasImport": true,
+    "ObjectName": "订单",
+    "IdKeyName": "id",
+    "GuidKeyName": "",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:70px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "Orders.xlsx",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "销售日期",
+          "Desc": "请选择销售日期",
+          "Field": "date",
+          "DataType": "string",
+          "FormType": "start_end_date",
+          "FormRule": "maxlength=\"10\" style=\"width:69px;\""
+        },
+        {
+          "Alias": "订单号",
+          "Desc": "请输入订单号",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "销售门店",
+          "Desc": "请选择销售门店",
+          "Field": "storeGuid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Stores/ListCombobox&showDefault=true\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "发货仓库",
+          "Desc": "请选择发货仓库",
+          "Field": "warehouseGuid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Warehouses/ListCombobox&showDefault=true\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "销售物料",
+          "Desc": "请选择销售物料",
+          "Field": "productGuid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Products/ListCombobox&showDefault=true\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "订单类型",
+          "Desc": "请选择订单类型",
+          "Field": "type",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&showDefault=true&parentCode=OrderType\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "订单状态",
+          "Desc": "请选择订单状态",
+          "Field": "state",
+          "DataType": "integer",
+          "FormType": "yes_no",
+          "FormRule": "style=\"width:138px;\"",
+          "FormData": [
+            {
+              "id": "",
+              "text": "===无==="
+            },
+            {
+              "id": "0",
+              "text": "待发货/退货"
+            },
+            {
+              "id": "1",
+              "text": "已发货/退货，待上传"
+            },
+            {
+              "id": "2",
+              "text": "已发货/退货，已上传"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Items": [
+        {
+          "Alias": "顾客姓名",
+          "Desc": "请输入顾客姓名",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "手机号码",
+          "Desc": "请输入手机号码",
+          "Field": "mobile",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "顾客地址",
+          "Desc": "请输入顾客地址",
+          "Field": "addr",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "订单号",
+          "Desc": "请输入订单号，为空将自动生成",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "销售门店",
+          "Desc": "请选择销售门店",
+          "Field": "store_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"true\" required=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Stores/ListCombobox&showDefault=false\""
+        },
+        {
+          "Alias": "物料分组",
+          "Desc": "请选择物料分组",
+          "Field": "cat_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Category/ListCombobox&showDefault=false&parentCode=ProductCat\""
+        },
+        {
+          "Alias": "销售物料",
+          "Desc": "请选择销售物料",
+          "Field": "product_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"true\" required=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Products/ListCombobox&showDefault=false\""
+        },
+        {
+          "Alias": "订单类型",
+          "Desc": "请选择订单类型",
+          "Field": "type",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&showDefault=false&parentCode=OrderType&include=SO,DH,GC,XS\""
+        },
+        {
+          "Alias": "发货仓库",
+          "Desc": "请选择发货仓库",
+          "Field": "warehouse_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "editable=\"false\" required=\"true\" url=\"{ApiProxyUrl}?apiName=Manager/Warehouses/ListCombobox&showDefault=false\""
+        },
+        {
+          "Alias": "物料数量",
+          "Desc": "请输入物料数量",
+          "Field": "quantity",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" min=\"1\""
+        },
+        {
+          "Alias": "订单金额",
+          "Desc": "请输入订单金额，保留2位小数",
+          "Field": "amount",
+          "DataType": "decimal",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" min=\"0\" precision=\"4\""
+        },
+        {
+          "Alias": "姓名",
+          "Desc": "请输入姓名",
+          "Field": "fullname",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"20\""
+        },
+        {
+          "Alias": "手机号码",
+          "Desc": "请输入手机号码",
+          "Field": "mobile",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"11\""
+        },
+        {
+          "Alias": "地址",
+          "Desc": "请输入地址",
+          "Field": "addr",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"200\""
+        }
+      ]
+    }
+  ],
+  "Show": [],
+  "Dialog": [
+    {
+      "Id": "Return",
+      "Title": "销退",
+      "SaveText": "销退",
+      "OpCode": "Set",
+      "Items": [
+        {
+          "Alias": "等待编号",
+          "Desc": "请输入等待编号",
+          "Field": "orderId",
+          "DataType": "integer",
+          "FormType": "hidden",
+          "FormRule": ""
+        },
+        {
+          "Alias": "退款数量",
+          "Desc": "请输入退款数量",
+          "Field": "orderQuantity",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" min=\"1\""
+        },
+        {
+          "Alias": "退款金额",
+          "Desc": "请输入退款金额",
+          "Field": "orderAmount",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" min=\"0\" precision=\"4\""
+        }
+      ]
+    }
+  ]
+}

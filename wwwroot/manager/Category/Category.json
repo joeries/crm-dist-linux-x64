@@ -1,0 +1,80 @@
+{
+  "Module": {
+    "TplCode": "LeftTree",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "类别",
+    "IdKeyName": "cat_id",
+    "GuidKeyName": "cat_guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"padding: 10px 0;\"",
+    "Tip": "提示：删除会导致相应名称无法正常显示。"
+  },
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "名称",
+          "Desc": "请输入类别名称",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "名称",
+          "Desc": "请输入类别名称",
+          "Field": "cat_name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+        },
+        {
+          "Alias": "编码",
+          "Desc": "无需填写",
+          "Field": "cat_code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "说明",
+          "Desc": "请输入类别说明",
+          "Field": "cat_desc",
+          "DataType": "string",
+          "FormType": "textarea",
+          "FormRule": ""
+        },
+        {
+          "Alias": "上级",
+          "Desc": "请选择上级类别",
+          "Field": "cat_parent_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Category/ListCombobox&showDefault=true\""
+        },
+        {
+          "Alias": "序号",
+          "Desc": "请输入类别序号",
+          "Field": "cat_order",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "maxlength=\"10\" min=\"0\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

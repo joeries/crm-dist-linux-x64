@@ -1,0 +1,96 @@
+{
+  "Module": {
+    "TplCode": "LeftTree",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "枚举",
+    "IdKeyName": "enum_id",
+    "GuidKeyName": "enum_guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"padding: 10px 0;\"",
+    "Tip": "提示：删除会导致相应名称无法正常显示。"
+  },
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "编码",
+          "Desc": "请输入枚举编码",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "名称",
+          "Desc": "请输入枚举名称",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "状态",
+          "Desc": "请选择枚举状态",
+          "Field": "state",
+          "DataType": "integer",
+          "FormType": "state",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "编码",
+          "Desc": "请输入枚举编码",
+          "Field": "enum_code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+        },
+        {
+          "Alias": "名称",
+          "Desc": "请输入枚举名称",
+          "Field": "enum_name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+        },
+        {
+          "Alias": "说明",
+          "Desc": "请输入枚举说明",
+          "Field": "enum_desc",
+          "DataType": "string",
+          "FormType": "textarea",
+          "FormRule": ""
+        },
+        {
+          "Alias": "上级",
+          "Desc": "请选择上级枚举",
+          "Field": "enum_parent_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&showDefault=true&type_showDefault=bool&idField=enum_guid\""
+        },
+        {
+          "Alias": "值",
+          "Desc": "请输入枚举值",
+          "Field": "enum_value",
+          "DataType": "interger",
+          "FormType": "numberbox",
+          "FormRule": "maxlength=\"10\" min=\"0\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

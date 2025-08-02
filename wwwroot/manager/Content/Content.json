@@ -1,0 +1,110 @@
+﻿{
+  "Module": {
+    "TplCode": "LeftTree",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "SaveWay": "Tab",
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "内容",
+    "IdKeyName": "content_id",
+    "GuidKeyName": "content_guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"padding: 10px 0;\"",
+    "Tip": "",
+    "ListTreeModuleCode": "Module"
+  },
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "标题",
+          "Desc": "",
+          "Field": "title",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"100\" style=\"width:200px\""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "标题",
+          "Desc": "请输入标题",
+          "Field": "content_title",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"200\""
+        },
+        {
+          "Alias": "栏目",
+          "Desc": "请选择栏目",
+          "Field": "mod_guid",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Module/ListCombobox&type=MT:Content&hasPower=true\""
+        },
+        {
+          "Alias": "封面",
+          "Desc": "图片宽高比2:1,推荐大小750px*375px",
+          "Field": "content_thumb",
+          "DataType": "string",
+          "FormType": "image",
+          "FormRule": "maxlength=\"200\"",
+          "Visible": false
+        },
+        {
+          "Alias": "标签",
+          "Desc": "请输入标签，英文逗号隔开",
+          "Field": "content_tags",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"200\"",
+          "Visible": false
+        },
+        {
+          "Alias": "关键字",
+          "Desc": "请输入关键字",
+          "Field": "content_key",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"200\"",
+          "Visible": false
+        },
+        {
+          "Alias": "摘要",
+          "Desc": "请输入摘要",
+          "Field": "content_desc",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"200\"",
+          "Visible": false
+        },
+        {
+          "Alias": "内容",
+          "Desc": "请输入内容",
+          "Field": "content_content",
+          "DataType": "html",
+          "FormType": "editor",
+          "FormRule": "required=\"true\" missingmessage=\"必填\""
+        },
+        {
+          "Alias": "序号",
+          "Desc": "请输入序号",
+          "Field": "content_order",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"5\""
+        }
+      ]
+    }
+  ],
+  "Show": [ ]
+}

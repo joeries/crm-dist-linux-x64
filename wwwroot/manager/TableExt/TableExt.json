@@ -1,0 +1,144 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": true,
+    "HasTop": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "扩展",
+    "IdKeyName": "ext_id",
+    "GuidKeyName": "ext_guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px;padding:10px 0;\"",
+    "Tip": ""
+  },
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "表名",
+          "Desc": "请输入扩展表名",
+          "Field": "table",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "类型",
+          "Desc": "请输入扩展类型",
+          "Field": "type",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "编码",
+          "Desc": "请输入扩展编码",
+          "Field": "code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "名称",
+          "Desc": "请输入扩展名称",
+          "Field": "name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "关联表名",
+          "Desc": "请输入关联表名",
+          "Field": "ext_table",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+        },
+        {
+          "Alias": "关联类型",
+          "Desc": "请输入关联类型",
+          "Field": "ext_type",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\""
+        },
+        {
+          "Alias": "扩展编码",
+          "Desc": "请输入扩展编码",
+          "Field": "ext_code",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+        },
+        {
+          "Alias": "扩展名称",
+          "Desc": "请输入扩展名称",
+          "Field": "ext_name",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"100\""
+        },
+        {
+          "Alias": "扩展说明",
+          "Desc": "请输入扩展说明",
+          "Field": "ext_desc",
+          "DataType": "string",
+          "FormType": "textarea",
+          "FormRule": ""
+        },
+        {
+          "Alias": "数据类型",
+          "Desc": "请选择数据类型",
+          "Field": "enum_code_data_type",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=DataType&idField=e_code\""
+        },
+        {
+          "Alias": "表单类型",
+          "Desc": "请选择表单类型",
+          "Field": "enum_code_form_type",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=FormType&idField=e_code\""
+        },
+        {
+          "Alias": "表单规则",
+          "Desc": "请输入表单元素的其它属性",
+          "Field": "ext_form_rule",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"200\""
+        },
+        {
+          "Alias": "角色类型",
+          "Desc": "请选择可编辑角色类型",
+          "Field": "enum_code_role_type",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=RoleType&idField=e_code&showDefault=true&showAll=true\""
+        },
+        {
+          "Alias": "扩展序号",
+          "Desc": "请输入扩展序号",
+          "Field": "ext_order",
+          "DataType": "integer",
+          "FormType": "numberbox",
+          "FormRule": "required=\"true\" missingmessage=\"必填\""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}
