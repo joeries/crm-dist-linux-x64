@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {},
     ".NETCoreApp,Version=v8.0/linux-x64": {
-      "CRM.UI/1.0.0": {
+      "CRM.UI/1.0": {
         "dependencies": {
           "CRM.Api.Model": "1.0.0",
           "CRM.BLL.EFCore.PostgreSQL": "1.0.0",
@@ -2384,7 +2384,7 @@
     }
   },
   "libraries": {
-    "CRM.UI/1.0.0": {
+    "CRM.UI/1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
