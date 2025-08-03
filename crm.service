@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/opt/crm-dist-linux-x64
-ExecStart=./opt/crm-dist-linux-x64/CRM.UI
+ExecStart=dotnet /opt/crm-dist-linux-x64/CRM.UI
 Restart=always
 RestartSec=10
 KillSignal=SIGINT
