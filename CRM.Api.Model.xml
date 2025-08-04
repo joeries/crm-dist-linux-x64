@@ -16,12 +16,12 @@
         </member>
         <member name="P:CRM.Api.Model.Account.ChangePasswordRequest.oldPassword">
             <summary>
-            The current password encoded by MD5        
+            The current password encoded by MD5-32-Lowercase
             </summary>
         </member>
         <member name="P:CRM.Api.Model.Account.ChangePasswordRequest.newPassword">
             <summary>
-            The new password encoded by MD5       
+            The new password encoded by MD5-32-Lowercase
             </summary>
         </member>
         <member name="T:CRM.Api.Model.Account.ChangePasswordResponse">
@@ -87,7 +87,7 @@
         </member>
         <member name="P:CRM.Api.Model.Account.LoginRequest.pwd">
             <summary>
-            The password encoded by MD5        
+            The password encoded by MD5-32-Lowercase
             </summary>
         </member>
         <member name="T:CRM.Api.Model.Account.LoginResponse">
@@ -792,12 +792,12 @@
         </member>
         <member name="P:CRM.Api.Model.Manager.Account.ChangePasswordRequest.oldPassword">
             <summary>
-            Old Password(MD5 32)
+            Old Password(MD5)
             </summary>
         </member>
         <member name="P:CRM.Api.Model.Manager.Account.ChangePasswordRequest.newPassword">
             <summary>
-            New Password(MD5 32)    
+            New Password(MD5)    
             </summary>
         </member>
         <member name="T:CRM.Api.Model.Manager.Account.LoginRequest">
@@ -1110,61 +1110,6 @@
             Operation List Request
             </summary>
         </member>
-        <member name="T:CRM.Api.Model.Manager.OrderCounters.ListRequest">
-            <summary>
-            OrderCounters List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Orders.DeleteRequest">
-            <summary>
-            Orders Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Orders.DeleteRequest.idList">
-            <summary>
-            ID List To Delete
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Orders.ImportRequest.excel">
-            <summary>
-            Excel文件路径
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Orders.ListRequest">
-            <summary>
-            Orders List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Orders.ListTreeRequest">
-            <summary>
-            Orders List Tree Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Orders.PassRequest">
-            <summary>
-            Orders Pass Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Orders.PassRequest.idList">
-            <summary>
-            ID List To Pass
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Orders.PassRequest.state">
-            <summary>
-            State: 1=>Pass, 0=>Unpass
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Orders.SetRequest">
-            <summary>
-            Orders Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Orders.SetRequest.orderId">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:CRM.Api.Model.Manager.Picture.DeleteRequest">
             <summary>
             Picture Delete Request
@@ -1208,41 +1153,6 @@
         <member name="T:CRM.Api.Model.Manager.Power.ListRequest">
             <summary>
             Power List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Products.DeleteRequest">
-            <summary>
-            Products Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Products.DeleteRequest.idList">
-            <summary>
-            ID List To Delete
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Products.ListComboboxRequest">
-            <summary>
-            Products List Combobox Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Products.ListRequest">
-            <summary>
-            Products List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Products.PassRequest">
-            <summary>
-            Products Pass Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Products.PassRequest.idList">
-            <summary>
-            ID List To Pass
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Products.PassRequest.state">
-            <summary>
-            State: 1=>Pass, 0=>Unpass
             </summary>
         </member>
         <member name="P:CRM.Api.Model.Manager.Property.ListRequest.parentGuid">
@@ -1355,96 +1265,6 @@
             Power GUID List To Invoke
             </summary>
         </member>
-        <member name="T:CRM.Api.Model.Manager.StockCounters.ListRequest">
-            <summary>
-            StockCounters List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stocks.DeleteRequest">
-            <summary>
-            Stocks Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stocks.DeleteRequest.idList">
-            <summary>
-            ID List To Delete
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stocks.ImportRequest.excel">
-            <summary>
-            Excel文件路径
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stocks.ListRequest">
-            <summary>
-            Stocks List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stocks.ListTreeRequest">
-            <summary>
-            Stocks List Tree Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stocks.PassRequest">
-            <summary>
-            Stocks Pass Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stocks.PassRequest.idList">
-            <summary>
-            ID List To Pass
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stocks.PassRequest.state">
-            <summary>
-            State: 1=>Pass, 0=>Unpass
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stocks.UpdateRequest">
-            <summary>
-            Stocks Update Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stores.DeleteRequest">
-            <summary>
-            Stores Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stores.DeleteRequest.idList">
-            <summary>
-            ID List To Delete
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stores.ListComboboxRequest">
-            <summary>
-            Stores List Combobox Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stores.ListRequest">
-            <summary>
-            Stores List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stores.ListTreeRequest">
-            <summary>
-            Stores List Tree Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Stores.PassRequest">
-            <summary>
-            Stores Pass Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stores.PassRequest.idList">
-            <summary>
-            ID List To Pass
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Stores.PassRequest.state">
-            <summary>
-            State: 1=>Pass, 0=>Unpass
-            </summary>
-        </member>
         <member name="T:CRM.Api.Model.Manager.TableExt.DeleteRequest">
             <summary>
             TableExt Delete Request
@@ -1538,46 +1358,6 @@
         <member name="P:CRM.Api.Model.Manager.User.ReSetRequest.idList">
             <summary>
             ID
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Warehouses.DeleteRequest">
-            <summary>
-            Warehouses Delete Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Warehouses.DeleteRequest.idList">
-            <summary>
-            ID List To Delete
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Warehouses.ListComboboxRequest">
-            <summary>
-            Warehouses List Combobox Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Warehouses.ListRequest">
-            <summary>
-            Warehouses List Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Warehouses.ListTreeRequest">
-            <summary>
-            Warehouses List Tree Request
-            </summary>
-        </member>
-        <member name="T:CRM.Api.Model.Manager.Warehouses.PassRequest">
-            <summary>
-            Warehouses Pass Request
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Warehouses.PassRequest.idList">
-            <summary>
-            ID List To Pass
-            </summary>
-        </member>
-        <member name="P:CRM.Api.Model.Manager.Warehouses.PassRequest.state">
-            <summary>
-            State: 1=>Pass, 0=>Unpass
             </summary>
         </member>
         <member name="T:CRM.Api.Model.PageBaseRequest">
@@ -1897,7 +1677,7 @@
         </member>
         <member name="P:CRM.Api.Model.Users.CreateRequest.password">
             <summary>
-            User Password
+            User Password (MD5-32-Lowercase)
             </summary>
         </member>
         <member name="P:CRM.Api.Model.Users.CreateRequest.mobileNo">
