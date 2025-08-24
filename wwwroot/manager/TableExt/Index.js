@@ -5,17 +5,17 @@
     datagrid: {
         heightOffset: -100,
         columns: [[
-            { field: 'chk', title: '选择', width: 50, checkbox: true },
-            { field: 'ext_table', title: '表名', width: 120, sortable: true , align: 'center'},
-            { field: 'ext_type', title: '类型', width: 120, sortable: true, align: 'center' },
-            { field: 'ext_code', title: '编码', width: 160, align: 'center' },          
-            { field: 'ext_name', title: '名称', width: 180, align: 'center' },
-            { field: 'ext_desc', title: '说明', width: 180, align: 'center' },
-            { field: 'ext_order', title: '序号', width: 100, align: 'center' },
+            { field: 'chk', title: 'Select', width: 50, checkbox: true },
+            { field: 'ext_table', title: 'Table Name', width: 120, sortable: true , align: 'center'},
+            { field: 'ext_type', title: 'Extension Type', width: 120, sortable: true, align: 'center' },
+            { field: 'ext_code', title: 'Extension Code', width: 160, align: 'center' },          
+            { field: 'ext_name', title: 'Extension Name', width: 180, align: 'center' },
+            { field: 'ext_desc', title: 'Extension Desc', width: 180, align: 'center' },
+            { field: 'ext_order', title: 'Order', width: 100, align: 'center' },
             {
-                field: 'state', title: '状态', width: 60, align: 'center', sortable: true,
+                field: 'state', title: 'State', width: 60, align: 'center', sortable: true,
                 formatter: function (value, rowData, rowIndex) {
-                    return 1 == value ? '启用' : '禁用';
+                    return 1 == value ? 'Enabled' : 'Disabled';
                 }
             }
         ]]

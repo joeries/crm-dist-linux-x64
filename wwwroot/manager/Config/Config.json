@@ -9,27 +9,27 @@
     "HasExport": false,
     "HasShow": false,
     "HasEditor": false,
-    "ObjectName": "配置",
+    "ObjectName": "Configurations",
     "IdKeyName": "cfg_id",
     "GuidKeyName": "cfg_guid",
     "TypeFieldName": "",
     "SearchAttr": "style=\"padding: 10px 0;\"",
-    "Tip": "提示：删除会导致相应功能无法正常工作。"
+    "Tip": ""
   },
   "Search": [
     {
       "Items": [
         {
-          "Alias": "编码",
-          "Desc": "请输入配置编码",
+          "Alias": "Code",
+          "Desc": "Please type the code.",
           "Field": "code",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\""
         },
         {
-          "Alias": "名称",
-          "Desc": "请输入配置名称",
+          "Alias": "Name",
+          "Desc": "Please type the name.",
           "Field": "name",
           "DataType": "string",
           "FormType": "validatebox",
@@ -42,48 +42,48 @@
     {
       "Items": [
         {
-          "Alias": "编码",
-          "Desc": "请输入配置编码",
+          "Alias": "Code",
+          "Desc": "Please type teh code.",
           "Field": "cfg_code",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"50\""
         },
         {
           "Alias": "名称",
-          "Desc": "请输入配置名称",
+          "Desc": "Please type the name.",
           "Field": "cfg_name",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"50\""
         },
         {
-          "Alias": "说明",
-          "Desc": "请输入配置说明",
+          "Alias": "Desc",
+          "Desc": "Please type the desc.",
           "Field": "cfg_desc",
           "DataType": "string",
           "FormType": "textarea",
           "FormRule": ""
         },
         {
-          "Alias": "上级",
-          "Desc": "请选择上级配置",
+          "Alias": "Parent",
+          "Desc": "Please select the parent configuration.",
           "Field": "cfg_parent_guid",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Config/ListCombobox&showDefault=true\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" url=\"{ApiProxyUrl}?apiName=Manager/Config/ListCombobox&showDefault=true\""
         },
         {
-          "Alias": "类型",
-          "Desc": "请选择数据类型",
+          "Alias": "Data Type",
+          "Desc": "Please select the data type.",
           "Field": "enum_code_data_type",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=DataType&idField=e_code\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=DataType&idField=e_code\""
         },
         {
-          "Alias": "值",
-          "Desc": "请输入配置值",
+          "Alias": "Value",
+          "Desc": "Please type the value.",
           "Field": "cfg_value",
           "DataType": "string",
           "FormType": "textarea",

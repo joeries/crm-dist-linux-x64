@@ -6,14 +6,14 @@
         widthOffset: -210,
         heightOffset: -100,
         columns: [[
-            { field: 'chk', title: '选择', width: 50, checkbox: true },
-            { field: 'cat_name', title: '类别名称', width: 200, sortable: false },
-            { field: 'cat_desc', title: '类别说明', width: 240, align: 'center' },
-            { field: 'cat_order', title: '类别序号', width: 150, align: 'center', sortable: false },
+            { field: 'chk', title: 'Select', width: 50, checkbox: true },
+            { field: 'cat_name', title: 'Name', width: 200, sortable: false },
+            { field: 'cat_desc', title: 'Desc', width: 240, align: 'center' },
+            { field: 'cat_order', title: 'Order', width: 150, align: 'center', sortable: false },
             {
-                field: 'state', title: '类别状态', width: 120, align: 'center', sortable: false,
+                field: 'state', title: 'State', width: 120, align: 'center', sortable: false,
                 formatter: function (value, rowData, rowIndex) {
-                    return value == 1 ? '启用' : '禁用';
+                    return value == 1 ? 'Enabled' : 'Disabled';
                 }
             }
         ]]

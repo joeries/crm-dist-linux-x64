@@ -6,15 +6,15 @@
         widthOffset: -210,
         heightOffset: -100,
         columns: [[
-            { field: 'chk', title: '选择', width: 50, checkbox: true },
-            { field: 'cfg_code', title: '配置编码', width: 160, sortable: false, align: 'center' },
-            { field: 'cfg_name', title: '配置名称', width: 160, sortable: false, align: 'center' },
-            { field: 'cfg_desc', title: '配置说明', width: 180 },
-            { field: 'cfg_value', title: '配置值', width: 240, align: 'center' },
+            { field: 'chk', title: 'Select', width: 50, checkbox: true },
+            { field: 'cfg_code', title: 'Code', width: 160, sortable: false, align: 'center' },
+            { field: 'cfg_name', title: 'Name', width: 160, sortable: false, align: 'center' },
+            { field: 'cfg_desc', title: 'Desc', width: 180 },
+            { field: 'cfg_value', title: 'Value', width: 240, align: 'center' },
             {
-                field: 'state', title: '配置状态', width: 80, align: 'center', sortable: false,
+                field: 'state', title: 'State', width: 80, align: 'center', sortable: false,
                 formatter: function (value, rowData, rowIndex) {
-                    return value == 1 ? '启用' : '禁用';
+                    return value == 1 ? 'Enabled' : 'Disabled';
                 }
             }
         ]]

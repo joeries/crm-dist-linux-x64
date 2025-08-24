@@ -103,7 +103,7 @@ $(function () {
                     request['apiName'] = 'Manager/' + moduleCode + '/Update';
                     api.post(request, function (request, response) {
                         if (response.code != 'OK') return;
-                        parent.tip.showInfo('保存成功');
+                        parent.tip.showInfo('Saved Successfully.');
                     });
                 }
                 return false;
@@ -118,7 +118,7 @@ $(function () {
             location.href = managerRoot + 'ModuleView?moduleCode=' + moduleCode + location.hash;
             return;
         }
-        parent.delTab('其它信息');
+        parent.delTab('Other Properties');
     };
 
     //对话框
@@ -127,8 +127,8 @@ $(function () {
         height: document.documentElement.clientHeight,
         closed: false,
         buttons: [
-         { id: 'btnSave', text: '保存', handler: doSave, iconCls: 'icon-save' },
-         { id: 'btnReset', text: '重置', handler: doReset, iconCls: 'icon-reload' }]
+         { id: 'btnSave', text: 'Save', handler: doSave, iconCls: 'icon-save' },
+         { id: 'btnReset', text: 'Reset', handler: doReset, iconCls: 'icon-reload' }]
     });
     $('#btnSave').click(doSave);
     $('#btnBack').click(doBack);

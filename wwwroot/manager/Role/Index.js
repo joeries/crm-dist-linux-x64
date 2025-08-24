@@ -91,10 +91,10 @@
         closable: false,
         modal: false,
         buttons: [
-         { id: 'btnAdd', text: '新增', iconCls: 'icon-add' },
-         { id: 'btnUpdate', text: '修改', iconCls: 'icon-edit' },
-         { id: 'btnDelete', text: '删除', iconCls: 'icon-remove' },
-         { id: 'btnCancel', text: '重置', iconCls: 'icon-cancel' }]
+         { id: 'btnAdd', text: 'Create', iconCls: 'icon-add' },
+         { id: 'btnUpdate', text: 'Modify', iconCls: 'icon-edit' },
+         { id: 'btnDelete', text: 'Delete', iconCls: 'icon-remove' },
+         { id: 'btnCancel', text: 'Reset', iconCls: 'icon-cancel' }]
     });
 
     $('#dlgModule').dialog({
@@ -121,19 +121,19 @@
         width: document.body.clientWidth - 450,
         height: document.documentElement.clientHeight - 180,
         columns: [[
-            { field: 'chk', title: '选择', width: 50, checkbox: true },
-            { field: 'power_name', title: '权限名称', width: 150, align: 'center' },
-            { field: 'power_desc', title: '权限说明', width: 180, align: 'center' },
+            { field: 'chk', title: 'Select', width: 50, checkbox: true },
+            { field: 'power_name', title: 'Permission Name', width: 150, align: 'center' },
+            { field: 'power_desc', title: 'Permission Desc', width: 180, align: 'center' },
             {
-                field: 'power_validate', title: '要求验证', width: 80, align: 'center',
+                field: 'power_validate', title: 'Validation Required', width: 130, align: 'center',
                 formatter: function (value, rowData, rowIndex) {
-                    return value == 1 ? '是' : '否';
+                    return value == 1 ? 'Yes' : 'No';
                 }
             },
             {
-                field: 'state', title: '权限状态', width: 80, align: 'center',
+                field: 'state', title: 'Permission State', width: 130, align: 'center',
                 formatter: function (value, rowData, rowIndex) {
-                    return value == 1 ? '启用' : '禁用';
+                    return value == 1 ? 'Enabled' : 'Disabled';
                 }
             }
         ]],
@@ -222,10 +222,10 @@
             return;
         }
         if (null == row) {
-            parent.show({ msg: '请选择要删除的角色！' });
+            parent.show({ msg: 'Please select roles to delete!' });
             return;
         }
-        confirm('您确定要删除当前角色【' + row.role_name + '】吗？', function (isYes) {
+        confirm('Are you sure to delete [' + row.role_name + ']?', function (isYes) {
             if (!isYes) {
                 return;
             }

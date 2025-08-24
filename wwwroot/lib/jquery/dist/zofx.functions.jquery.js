@@ -58,7 +58,7 @@ var doPost = function (data, successCallback, failCallback, showTip, doRedirect)
             parent.location.href = api.mainDomain + 'Manager/Account/Login';
         }
         else {
-            if (showTip) parent.tip.showError('登录超时，请重新登录！');
+            if (showTip) parent.tip.showError('Timouted, please sign in again.');
             parent.showLogin();
         }
     }
@@ -424,10 +424,10 @@ var api = {
                     response = null;
                 }
                 if (null === response) {
-                    response = { code: 'NETWORK_ERROR', desc: XHR.status + "：" + (XHR.responseText || "网络错误或服务器错误") };
+                    response = { code: 'NETWORK_ERROR', desc: XHR.status + ": " + (XHR.responseText || "Network Error or Server Error") };
                 }
                 if (!response.desc) {
-                    response.desc = 'OK' == response.code ? '操作成功' : '操作失败';
+                    response.desc = 'OK' == response.code ? 'Succeeded.' : 'Failed.';
                 }
                 if (showTip && response.desc) {
                     if (response.code == 'OK') {
@@ -450,7 +450,7 @@ var api = {
                             parent.location.href = api.mainDomain + 'Manager/Account/Login';
                         }
                         else {
-                            parent.show({ msg: '登录超时，请重新登录！' });
+                            parent.show({ msg: 'Timouted, please sign in again.' });
                             parent.showLogin();
                         }
                     }
@@ -460,7 +460,7 @@ var api = {
                     return;
                 }
                 if (!response.desc) {
-                    response.desc = 'OK' == response.code ? '操作成功' : '操作失败';
+                    response.desc = 'OK' == response.code ? 'Succeeded.' : 'Failed.';
                 }
                 if (showTip && response.desc) {
                     if (response.code == 'OK') {

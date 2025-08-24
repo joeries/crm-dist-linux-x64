@@ -32,14 +32,14 @@ $(function () {
     $('#dlgLogin').dialog({
         width: 330,
         height: 300,
-        title: sysName + ' 重新登录',
+        title: 'Sign In',
         modal: true,
         shadow: true,
         closable: true,
         closed: true,
         buttons: [
-            { id: 'btnLogin', text: '登录', iconCls: 'icon-ok', handler: doLogin },
-            { id: 'btnCancelLogin', text: '取消', iconCls: 'icon-cancel', handler: hideLogin }
+            { id: 'btnLogin', text: 'Sign In', iconCls: 'icon-ok', handler: doLogin },
+            { id: 'btnCancelLogin', text: 'Cancel', iconCls: 'icon-cancel', handler: hideLogin }
         ]
     });
 
@@ -54,7 +54,7 @@ $(function () {
                 $('#txtPassword').val(hex_md5(password));
 
                 $('#btnLogin').linkbutton('disable');
-                $('#tipLogin').html('登录中...');
+                $('#tipLogin').html('Signing in...');
 
                 return true;
             }
@@ -69,16 +69,16 @@ $(function () {
     });
 
     $('#dlgChangePassword').dialog({
-        width: 330,
+        width: 400,
         height: 300,
-        title: sysName + ' 修改密码',
+        title: 'Change Password',
         modal: true,
         shadow: true,
         closable: true,
         closed: true,
         buttons: [
-            { id: 'btnChangePassword', text: '确定', iconCls: 'icon-ok', handler: doChangePassword },
-            { id: 'btnCancelChangePassword', text: '取消', iconCls: 'icon-cancel', handler: hideChangePassword }
+            { id: 'btnChangePassword', text: 'Submit', iconCls: 'icon-ok', handler: doChangePassword },
+            { id: 'btnCancelChangePassword', text: 'Cancel', iconCls: 'icon-cancel', handler: hideChangePassword }
         ]
     });
 
@@ -99,12 +99,12 @@ $(function () {
                 $('#txtReNewPassword').val(hex_md5(pwd));
 
                 $('#btnChangePassword').linkbutton('disable');
-                $('#tipChangePassword').html('密码修改中...');
+                $('#tipChangePassword').html('Changing...');
 
                 return true;
             }
             else {
-                $('#tipChangePassword').html('请输入密码');
+                $('#tipChangePassword').html('Please type the password.');
                 return false;
             }
         },
@@ -121,7 +121,7 @@ $(function () {
     });
 
     $('#btnLogout').click(function () {
-        confirm('您确定要退出系统吗?', function (yes) {
+        confirm('Are you sure to sign out?', function (yes) {
             if (yes) {
                 $.post(managerRoot + 'Account/DoLogout', {}, function (data) {
                     doPost(data, function (response) {

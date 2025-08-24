@@ -127,7 +127,7 @@ $(function () {
                             $('#btnSave').linkbutton('enable');
                             return;
                         }
-                        parent.tip.showInfo('保存成功');
+                        parent.tip.showInfo('Saved Successfully.');
 
                         $(window.parent.document).contents().find('#' + moduleCode)[0].contentWindow.postMessage('refresh', '*');
                         doBack();
@@ -149,7 +149,7 @@ $(function () {
             location.href = managerRoot + 'ModuleView?moduleCode=' + moduleCode + location.hash;
             return;
         }
-        parent.delTab((id ? '编辑' : '新增') + objectName);
+        parent.delTab((id ? 'Modify' : 'Create') + objectName);
     };
     //对话框
     $('#dlgSave').dialog({
@@ -157,12 +157,12 @@ $(function () {
         height: document.documentElement.clientHeight,
         closed: false,
         buttons: [
-         { id: 'btnSave', text: '保存', handler: doSave, iconCls: 'icon-save' },
-         { id: 'btnReset', text: '重置', handler: doReset, iconCls: 'icon-reload' }]
+         { id: 'btnSave', text: 'Save', handler: doSave, iconCls: 'icon-save' },
+         { id: 'btnReset', text: 'Reset', handler: doReset, iconCls: 'icon-reload' }]
     });
     $('#btnSave').click(doSave);
     $('#btnBack').click(function () {
-        tip.showConfirm('您确定要关闭该窗口吗？', function (r) {
+        tip.showConfirm('Are you sure to close this window?', function (r) {
             if (r) {
                 doBack();
             }

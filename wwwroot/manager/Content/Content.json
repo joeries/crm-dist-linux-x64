@@ -10,7 +10,7 @@
     "HasExport": false,
     "HasShow": false,
     "HasEditor": false,
-    "ObjectName": "内容",
+    "ObjectName": "Contents",
     "IdKeyName": "content_id",
     "GuidKeyName": "content_guid",
     "TypeFieldName": "",
@@ -22,7 +22,7 @@
     {
       "Items": [
         {
-          "Alias": "标题",
+          "Alias": "Title",
           "Desc": "",
           "Field": "title",
           "DataType": "string",
@@ -36,24 +36,24 @@
     {
       "Items": [
         {
-          "Alias": "标题",
-          "Desc": "请输入标题",
+          "Alias": "Title",
+          "Desc": "Please type the title.",
           "Field": "content_title",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"200\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"200\""
         },
         {
-          "Alias": "栏目",
-          "Desc": "请选择栏目",
+          "Alias": "Secion",
+          "Desc": "Please select the section.",
           "Field": "mod_guid",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Module/ListCombobox&type=MT:Content&hasPower=true\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" url=\"{ApiProxyUrl}?apiName=Manager/Module/ListCombobox&type=MT:Content&hasPower=true\""
         },
         {
-          "Alias": "封面",
-          "Desc": "图片宽高比2:1,推荐大小750px*375px",
+          "Alias": "Cover",
+          "Desc": "W:H=2:1",
           "Field": "content_thumb",
           "DataType": "string",
           "FormType": "image",
@@ -61,8 +61,8 @@
           "Visible": false
         },
         {
-          "Alias": "标签",
-          "Desc": "请输入标签，英文逗号隔开",
+          "Alias": "Tags",
+          "Desc": "Please type the tags separated by comma.",
           "Field": "content_tags",
           "DataType": "string",
           "FormType": "validatebox",
@@ -70,8 +70,8 @@
           "Visible": false
         },
         {
-          "Alias": "关键字",
-          "Desc": "请输入关键字",
+          "Alias": "Keywords",
+          "Desc": "Please type the keywords separated by comma.",
           "Field": "content_key",
           "DataType": "string",
           "FormType": "validatebox",
@@ -79,8 +79,8 @@
           "Visible": false
         },
         {
-          "Alias": "摘要",
-          "Desc": "请输入摘要",
+          "Alias": "Digest",
+          "Desc": "Please type the digest.",
           "Field": "content_desc",
           "DataType": "string",
           "FormType": "validatebox",
@@ -88,20 +88,20 @@
           "Visible": false
         },
         {
-          "Alias": "内容",
-          "Desc": "请输入内容",
+          "Alias": "Content",
+          "Desc": "Please type the content.",
           "Field": "content_content",
           "DataType": "html",
           "FormType": "editor",
-          "FormRule": "required=\"true\" missingmessage=\"必填\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\""
         },
         {
-          "Alias": "序号",
-          "Desc": "请输入序号",
+          "Alias": "Order",
+          "Desc": "Please type the order.",
           "Field": "content_order",
           "DataType": "integer",
           "FormType": "numberbox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"5\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"5\""
         }
       ]
     }

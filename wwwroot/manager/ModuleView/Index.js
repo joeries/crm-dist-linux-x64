@@ -146,7 +146,7 @@ $(function () {
         });
     }
 
-    //执行查询
+    //
     $('#btnSearch').click(function () {
         $('#formSearch').form('submit', {
             onSubmit: function () {
@@ -163,7 +163,7 @@ $(function () {
             }
         });
     });
-    //执行导出
+    //
     $('#btnExport').click(function () {
         $('#formSearch').form('submit', {
             onSubmit: function () {
@@ -174,7 +174,7 @@ $(function () {
             }
         });
     });
-    //重置
+    //
     $('#btnReset').click(function () {
         $('#formSearch').form('reset');
     });
@@ -191,7 +191,7 @@ $(function () {
     view.datagrid['onDblClickRow'] = function (rowIndex, rowData) {
         if (view.showUpdateUI) {            
             if (saveWay == 'Tab') {
-                parent.addTab('编辑' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode + '&id=' + rowData[idKeyName]);
+                parent.addTab('Modify ' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode + '&id=' + rowData[idKeyName]);
                 return;
             }
             else if (saveWay == 'Page') {
@@ -203,7 +203,7 @@ $(function () {
     };
     if (view.additions && view.additions.length > 0) {
         view.datagrid.columns[0].push({
-            field: 'op', title: '操作', width: view.additions.length * 100, align: 'center', formatter: function (value, rowData, rowIndex) {
+            field: 'op', title: 'Operations', width: view.additions.length * 100, align: 'center', formatter: function (value, rowData, rowIndex) {
                 if (!view.additions || view.additions.length == 0) return;
                 var opHtml = [];
                 var buttonText = null;
@@ -262,15 +262,15 @@ $(function () {
     }
     delete view.datagrid['widthOffset'];
     delete view.datagrid['heightOffset'];
-    //表格初始化
+    //
     $('#dgList').datagrid(view.datagrid);
 
-    //显示导入UI
+    //
     var showImport = function () {
         $('#dlgImport').dialog('open');
         $('#formImport').form('reset');
     };
-    //显示新增UI
+    //
     var showCreate = function () {
         if (view.doCreate) {
             view.doCreate();
@@ -287,7 +287,7 @@ $(function () {
         }
         view.setCreate();
     };
-    //显示修改UI
+    //
     var showUpdate = function (rowData) {
         if (view.doUpdate) {
             if (!view.doUpdate(rowData)) {
@@ -303,7 +303,7 @@ $(function () {
         }
         view.setUpdate(rowData);
     };
-    //删除
+    //
     var showDelete = function (rowDatas) {
         var idList = [];
         for (var index = 0; index < rowDatas.length; index++) {
@@ -322,7 +322,7 @@ $(function () {
             if (view.refresh) view.refresh();
         });
     };
-    //启用/禁用
+    //
     var showPass = function (rowDatas, state) {
         var idList = [];
         for (var index = 0; index < rowDatas.length; index++) {
@@ -342,7 +342,7 @@ $(function () {
             if (view.refresh) view.refresh();
         });
     };
-    //置顶/取消置顶
+    //
     var showTop = function (rowDatas, state) {
         var idList = [];
         for (var index = 0; index < rowDatas.length; index++) {
@@ -363,20 +363,20 @@ $(function () {
         });
     };
 
-    //导入
+    //
     $('#btnImport').click(function () {
         if ($('#btnImport').linkbutton('options').disabled) {
             return;
         }
         showImport();
     });
-    //新增
+    //
     $('#btnCreate').click(function () {
         if ($('#btnCreate').linkbutton('options').disabled) {
             return;
         }
         if (saveWay == 'Tab') {
-            parent.addTab('新增' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode);
+            parent.addTab('Create ' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode);
             return;
         }
         else if (saveWay == 'Page') {
@@ -385,18 +385,18 @@ $(function () {
         }
         showCreate();
     });
-    //修改
+    //
     $('#btnUpdate').click(function () {
         if ($('#btnUpdate').linkbutton('options').disabled) {
             return;
         }
         var rowData = $('#dgList').datagrid('getSelected');
         if (null == rowData) {
-            parent.show({ msg: '请选择要修改的行' });
+            parent.show({ msg: 'Please select rows.' });
             return;
         }
         if (saveWay == 'Tab') {
-            parent.addTab('编辑' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode + '&id=' + rowData[idKeyName]);
+            parent.addTab('Modify ' + objectName, managerRoot + 'ModuleView/Save?moduleCode=' + moduleCode + '&id=' + rowData[idKeyName]);
             return;
         }
         else if (saveWay == 'Page') {
@@ -405,81 +405,81 @@ $(function () {
         }
         showUpdate(rowData);
     });
-    //删除
+    //
     $('#btnDelete').click(function () {
         if ($('#btnDelete').linkbutton('options').disabled) {
             return;
         }
         var rowDatas = $('#dgList').datagrid('getSelections');
         if (rowDatas.length == 0) {
-            parent.show({ msg: '请选择要删除的行' });
+            parent.show({ msg: 'Please select rows.' });
             return;
         }
-        confirm('您确定要删除所有选中的行吗？', function (isYes) {
+        confirm('Are you sure to delete all the selected rows?', function (isYes) {
             if (isYes) {
                 showDelete(rowDatas);
             }
         });        
     });
-    //启用
+    //
     $('#btnPass').click(function () {
         if ($('#btnPass').linkbutton('options').disabled) {
             return;
         }
         var rowDatas = $('#dgList').datagrid('getSelections');
         if (rowDatas.length == 0) {
-            parent.show({ msg: '请选择要操作的数据' });
+            parent.show({ msg: 'Please select rows.' });
             return;
         }
-        confirm('您确定要' + $('#btnPass').linkbutton('options').text + '吗？', function (isYes) {
+        confirm('Are you sure to ' + $('#btnPass').linkbutton('options').text + '?', function (isYes) {
             if (isYes) {
                 showPass(rowDatas, 1);
             }
         });
     });
-    //禁用
+    //
     $('#btnUnPass').click(function () {
         if ($('#btnUnPass').linkbutton('options').disabled) {
             return;
         }
         var rowDatas = $('#dgList').datagrid('getSelections');
         if (rowDatas.length == 0) {
-            parent.show({ msg: '请选择要操作的数据' });
+            parent.show({ msg: 'Please select rows.' });
             return;
         }
-        confirm('您确定要' + $('#btnUnPass').linkbutton('options').text + '吗？', function (isYes) {
+        confirm('Are you sure to ' + $('#btnUnPass').linkbutton('options').text + '?', function (isYes) {
             if (isYes) {
                 showPass(rowDatas, 0);
             }
         });
     });
-    //置顶
+    //
     $('#btnTop').click(function () {
         if ($('#btnTop').linkbutton('options').disabled) {
             return;
         }
         var rowDatas = $('#dgList').datagrid('getSelections');
         if (rowDatas.length == 0) {
-            parent.show({ msg: '请选择要置顶的行' });
+            parent.show({ msg: 'Please select rows to recommend.' });
             return;
         }
-        confirm('您确定要置顶所有选中的行吗？', function (isYes) {
+        confirm('Are you sure to recommend all the selected rows?', function (isYes) {
             if (isYes) {
                 showTop(rowDatas, 1);
             }
         });
     });
-    //取消置顶
+    //
     $('#btnUnTop').click(function () {
         if ($('#btnUnTop').linkbutton('options').disabled) {
             return;
         }
         var rowDatas = $('#dgList').datagrid('getSelections');
         if (rowDatas.length == 0) {
-            parent.show({ msg: '请选择要取消置顶的行' });
+            parent.show({ msg: 'Please select rows to cancel recommendation.' });
             return;
         }
-        confirm('您确定要取消置顶所有选中的行吗？', function (isYes) {
+        confirm('Are you sure to cancel the recommendation of all the selected rows?', function (isYes) {
             if (isYes) {
                 showTop(rowDatas, 0);
             }
@@ -536,8 +536,8 @@ $(function () {
         height: view.saveDialog.height,
         closed: true,
         buttons: [
-         { id: 'btnSave', text: '保存', iconCls: 'icon-save', handler: doSave },
-         { id: 'btnCancel', text: '取消', iconCls: 'icon-cancel', handler: doCancel}]
+         { id: 'btnSave', text: 'Save', iconCls: 'icon-save', handler: doSave },
+         { id: 'btnCancel', text: 'Cancel', iconCls: 'icon-cancel', handler: doCancel}]
     });
 
     var importing = false;
@@ -580,8 +580,8 @@ $(function () {
         height: view.saveDialog.height,
         closed: true,
         buttons: [
-         { id: 'btnStartImport', text: '保存', iconCls: 'icon-save', handler: doStartImport },
-         { id: 'btnCancelImport', text: '取消', iconCls: 'icon-cancel', handler: doCancelImport }]
+         { id: 'btnStartImport', text: 'Save', iconCls: 'icon-save', handler: doStartImport },
+         { id: 'btnCancelImport', text: 'Cancel', iconCls: 'icon-cancel', handler: doCancelImport }]
     });
 
     $('.dialog').each(function (index, element) {
@@ -595,7 +595,7 @@ $(function () {
             closed: true,
             buttons: [
                 {
-                    id: 'btnSave' + elementId, text: saveText ? saveText : '提交', iconCls: 'icon-save', handler: function () {
+                    id: 'btnSave' + elementId, text: saveText ? saveText : 'Submit', iconCls: 'icon-save', handler: function () {
                         $('#form' + elementId).form('submit', {
                             onSubmit: function () {
                                 if ($('#form' + elementId).form('validate')) {
@@ -613,7 +613,7 @@ $(function () {
                     }
                 },
                 {
-                    id: 'btnCancel' + elementId, text: '取消', iconCls: 'icon-cancel', handler: function () {
+                    id: 'btnCancel' + elementId, text: 'Cancel', iconCls: 'icon-cancel', handler: function () {
                         $('#dlg' + elementId).dialog('close');
                     }
                 }]

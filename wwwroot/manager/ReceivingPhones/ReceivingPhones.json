@@ -1,0 +1,66 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": false,
+    "HasTop": false,
+    "HasImport": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "Receiving Phones",
+    "IdKeyName": "Id",
+    "GuidKeyName": "Guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "Phone Number",
+          "Desc": "Please type the phone number.",
+          "Field": "phoneNumber",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"11\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "State",
+          "Desc": "Please select the phone state.",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "state",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "Phone Number",
+          "Desc": "Plese type the phone number.",
+          "Field": "receivingMobileNo",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        },
+        {
+          "Alias": "Phone Identity",
+          "Desc": "Plese type the phone identity.",
+          "Field": "deviceIdentity",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

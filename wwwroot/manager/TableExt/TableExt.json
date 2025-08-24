@@ -9,7 +9,7 @@
     "HasExport": false,
     "HasShow": false,
     "HasEditor": false,
-    "ObjectName": "扩展",
+    "ObjectName": "Extension Fields",
     "IdKeyName": "ext_id",
     "GuidKeyName": "ext_guid",
     "TypeFieldName": "",
@@ -20,32 +20,32 @@
     {
       "Items": [
         {
-          "Alias": "表名",
-          "Desc": "请输入扩展表名",
+          "Alias": "Table Name",
+          "Desc": "Please type the table name.",
           "Field": "table",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\""
         },
         {
-          "Alias": "类型",
-          "Desc": "请输入扩展类型",
+          "Alias": "Extension Type",
+          "Desc": "Please type the extension type.",
           "Field": "type",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\""
         },
         {
-          "Alias": "编码",
-          "Desc": "请输入扩展编码",
+          "Alias": "Extension Code",
+          "Desc": "Please type the extension code.",
           "Field": "code",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\""
         },
         {
-          "Alias": "名称",
-          "Desc": "请输入扩展名称",
+          "Alias": "Extension Name",
+          "Desc": "Please type the extension name.",
           "Field": "name",
           "DataType": "string",
           "FormType": "validatebox",
@@ -58,84 +58,84 @@
     {
       "Items": [
         {
-          "Alias": "关联表名",
-          "Desc": "请输入关联表名",
+          "Alias": "Table Name",
+          "Desc": "Please type the table name.",
           "Field": "ext_table",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"50\""
         },
         {
-          "Alias": "关联类型",
-          "Desc": "请输入关联类型",
+          "Alias": "Extension Type",
+          "Desc": "Please type the extension type.",
           "Field": "ext_type",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\""
         },
         {
-          "Alias": "扩展编码",
-          "Desc": "请输入扩展编码",
+          "Alias": "Extension Code",
+          "Desc": "Please type the code.",
           "Field": "ext_code",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"50\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"50\""
         },
         {
-          "Alias": "扩展名称",
-          "Desc": "请输入扩展名称",
+          "Alias": "Extension Name",
+          "Desc": "Please type the name.",
           "Field": "ext_name",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"100\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"100\""
         },
         {
-          "Alias": "扩展说明",
-          "Desc": "请输入扩展说明",
+          "Alias": "Extension Desc",
+          "Desc": "Please type the desc.",
           "Field": "ext_desc",
           "DataType": "string",
           "FormType": "textarea",
           "FormRule": ""
         },
         {
-          "Alias": "数据类型",
-          "Desc": "请选择数据类型",
+          "Alias": "Data Type",
+          "Desc": "Please select the data type.",
           "Field": "enum_code_data_type",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=DataType&idField=e_code\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=DataType&idField=e_code\""
         },
         {
-          "Alias": "表单类型",
-          "Desc": "请选择表单类型",
+          "Alias": "Form Type",
+          "Desc": "Please select the form type.",
           "Field": "enum_code_form_type",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=FormType&idField=e_code\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=FormType&idField=e_code\""
         },
         {
-          "Alias": "表单规则",
-          "Desc": "请输入表单元素的其它属性",
+          "Alias": "Form Rules",
+          "Desc": "Please type the form rules.",
           "Field": "ext_form_rule",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"200\""
         },
         {
-          "Alias": "角色类型",
-          "Desc": "请选择可编辑角色类型",
+          "Alias": "Role Type",
+          "Desc": "Please select the role type.",
           "Field": "enum_code_role_type",
           "DataType": "string",
           "FormType": "combobox",
           "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Enums/ListCombobox&parentCode=RoleType&idField=e_code&showDefault=true&showAll=true\""
         },
         {
-          "Alias": "扩展序号",
-          "Desc": "请输入扩展序号",
+          "Alias": "Extension Order",
+          "Desc": "Please type the order.",
           "Field": "ext_order",
           "DataType": "integer",
           "FormType": "numberbox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\""
         }
       ]
     }

@@ -10,7 +10,7 @@
     "HasExport": false,
     "HasShow": false,
     "HasEditor": true,
-    "ObjectName": "用户",
+    "ObjectName": "Users",
     "IdKeyName": "user_id",
     "GuidKeyName": "user_guid",
     "TypeFieldName": "",
@@ -22,32 +22,32 @@
     {
       "Items": [
         {
-          "Alias": "账号",
-          "Desc": "请输入登录账号",
+          "Alias": "Account",
+          "Desc": "Please type the account.",
           "Field": "account",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"20\" style=\"width:138px;\""
         },
         {
-          "Alias": "姓名",
-          "Desc": "请输入用户姓名",
+          "Alias": "Fullname",
+          "Desc": "Please type the fullname.",
           "Field": "name",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"50\" style=\"width:138px;\""
         },
         {
-          "Alias": "手机",
-          "Desc": "请输入手机号码",
+          "Alias": "Phone Number",
+          "Desc": "Please type the phone number.",
           "Field": "mobile",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": "maxlength=\"11\" style=\"width:138px;\""
         },
         {
-          "Alias": "邮箱",
-          "Desc": "请输入电子邮箱",
+          "Alias": "Email",
+          "Desc": "Please type the email.",
           "Field": "email",
           "DataType": "string",
           "FormType": "validatebox",
@@ -58,25 +58,25 @@
     {
       "Items": [
         {
-          "Alias": "部门",
-          "Desc": "请选择所在部门",
+          "Alias": "Department",
+          "Desc": "Please select the department.",
           "Field": "deptGuid",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Department/ListCombobox&showDefault=true&defaultText=UnLimited\"",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Department/ListCombobox&showDefault=true&defaultText=UNLIMITED\"",
           "Visible": false
         },
         {
-          "Alias": "角色",
-          "Desc": "请选择所属角色",
+          "Alias": "Role",
+          "Desc": "Please select the role.",
           "Field": "roleGuid",
           "DataType": "string",
           "FormType": "combobox",
-          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Role/ListCombobox&showDefault=true&defaultText=UnLimited\""
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/Role/ListCombobox&showDefault=true&defaultText=UNLIMITED\""
         },
         {
-          "Alias": "状态",
-          "Desc": "请选择用户状态",
+          "Alias": "State",
+          "Desc": "Please select the user state.",
           "Field": "state",
           "DataType": "string",
           "FormType": "state",
@@ -89,48 +89,48 @@
     {
       "Items": [
         {
-          "Alias": "登录账号",
-          "Desc": "请输入登录账号",
+          "Alias": "Account",
+          "Desc": "Plese type the account.",
           "Field": "user_name",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"20\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"20\""
         },
         {
-          "Alias": "登录密码",
-          "Desc": "请输入登录密码",
+          "Alias": "Password",
+          "Desc": "Plese type the password.",
           "Field": "user_pwd",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": "required=\"true\" missingmessage=\"必填\" maxlength=\"32\""
+          "FormRule": "required=\"true\" missingmessage=\"Required\" maxlength=\"32\""
         },
         {
-          "Alias": "用户姓名",
-          "Desc": "请输入用户姓名",
+          "Alias": "Fullname",
+          "Desc": "Plese type the fullname.",
           "Field": "user_full_name",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": ""
         },
         {
-          "Alias": "手机号码",
-          "Desc": "请输入手机号码",
+          "Alias": "Phone Number",
+          "Desc": "Plese type the phone number.",
           "Field": "user_mobile",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": ""
         },
         {
-          "Alias": "电子邮箱",
-          "Desc": "请输入电子邮箱",
+          "Alias": "Email",
+          "Desc": "Plese type the email.",
           "Field": "user_email",
           "DataType": "string",
           "FormType": "validatebox",
           "FormRule": ""
         },
         {
-          "Alias": "所在部门",
-          "Desc": "请选择所在部门",
+          "Alias": "Department",
+          "Desc": "Plese select the department.",
           "Field": "dept_guid",
           "DataType": "string",
           "FormType": "combobox",
@@ -138,8 +138,8 @@
           "Visible": false
         },
         {
-          "Alias": "所属角色",
-          "Desc": "请选择所属角色",
+          "Alias": "Role",
+          "Desc": "Plese select the role.",
           "Field": "role_guid",
           "DataType": "string",
           "FormType": "combobox",

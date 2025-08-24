@@ -1,0 +1,81 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": false,
+    "HasUpdate": false,
+    "HasDelete": false,
+    "HasPass": false,
+    "HasTop": false,
+    "HasImport": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "Received SMSs",
+    "IdKeyName": "Id",
+    "GuidKeyName": "Guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "Customer Phone Number",
+          "Desc": "Please type the customer phone number.",
+          "Field": "customerMobileNo",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"20\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "Receiving Phone Number",
+          "Desc": "Please type the receiving phone number.",
+          "Field": "receivingMobileNo",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"20\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "Recieved Time",
+          "Desc": "Please select the recieved time.",
+          "Field": "recievedTime",
+          "DataType": "Datetime",
+          "FormType": "start_end_date",
+          "FormRule": "maxlength=\"10\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "State",
+          "Desc": "Please select the SMS state.",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "yes_no",
+          "FormData": [
+            {
+              "id": "",
+              "text": "===Not Specified==="
+            },
+            {
+              "id": "0",
+              "text": "Unprocessed"
+            },
+            {
+              "id": "1",
+              "text": "Processing"
+            },
+            {
+              "id": "2",
+              "text": "Processed"
+            }
+          ],
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    
+  ],
+  "Show": []
+}

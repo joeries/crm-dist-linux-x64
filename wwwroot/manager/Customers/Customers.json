@@ -1,0 +1,74 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": true,
+    "HasUpdate": true,
+    "HasDelete": true,
+    "HasPass": false,
+    "HasTop": false,
+    "HasImport": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "Customers",
+    "IdKeyName": "Id",
+    "GuidKeyName": "Guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "Customers.xlsx",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "Fullname",
+          "Desc": "Please type the fullname.",
+          "Field": "fullname",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"50\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "Phone Number",
+          "Desc": "Please type the phone number.",
+          "Field": "phoneNumber",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"11\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "State",
+          "Desc": "Please select the customer state.",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "state",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    {
+      "Items": [
+        {
+          "Alias": "Fullname",
+          "Desc": "Plese type the fullname.",
+          "Field": "fullname",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        },
+        {
+          "Alias": "Phone Number",
+          "Desc": "Plese type the phone number.",
+          "Field": "phoneNumber",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Show": []
+}

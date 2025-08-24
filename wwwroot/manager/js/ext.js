@@ -40,7 +40,7 @@ $.extend($.fn.validatebox.defaults.rules, {
         validator: function (value, param) {
             return $(param[0]).val() == value;
         },
-        message: '字段不匹配'
+        message: 'Fields dismatch.'
     },
     noBlank: {
         validator: function (value, param) {
@@ -49,23 +49,23 @@ $.extend($.fn.validatebox.defaults.rules, {
             }
             return true;
         },
-        message: '不能全为空白字符'
+        message: 'Shouldn\'t be all empty.'
     },
     selected: {
         validator: function (value, param) {
             if (param) {
-                return value != '===无===';
+                return value != '===None===';
             }
             return true;
         },
-        message: '该项不能选“无”'
+        message: '"None" is not allowed.'
     }
 });
 
 $.extend($.fn.datagrid.defaults, {
     striped: true,
     nowrap: false,
-    loadMsg: '正在获取并加载数据……',
+    loadMsg: 'Loading...',
     pagination: true,
     rownumbers: true,
     loadFilter: function (data) {
@@ -127,13 +127,13 @@ var themes = {
     //'material-blue': root + 'lib/jquery-easyui-1.5/themes/material-blue/easyui.css',
     //'material-teal': root + 'lib/jquery-easyui-1.5/themes/material-teal/easyui.css'
 };
-function setCookie(name, value) {//两个参数，一个是cookie的名名字，一个是值
-    var Days = 30; //此 cookie 将被保存 30 天
+function setCookie(name, value) {
+    var Days = 30;
     var exp = new Date();    //new Date("December 31, 9998");
     exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
     document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
 }
-function getCookie(name) {//取cookies函数        
+function getCookie(name) {   
     var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
     if (arr != null) return unescape(arr[2]); return 'gray';
 }

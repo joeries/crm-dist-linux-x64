@@ -22,15 +22,15 @@ var page = {
             var clipboard = new ClipboardJS('.copy');
             //复制成功执行的回调，可选
             clipboard.on('success', function (e) {
-                parent.tip.showInfo('已复制成功');
+                parent.tip.showInfo('Copied successfully.');
             });
             //复制失败执行的回调，可选
             clipboard.on('error', function (e) {
-                parent.tip.showError('复制失败');
+                parent.tip.showError('Failed to copy.');
             });
         }
         else {
-            parent.tip.showError('该浏览器不支持复制功能');
+            parent.tip.showError('The browser doesn\'t support copying.');
         }
 
         $('#dlgDoc').dialog({

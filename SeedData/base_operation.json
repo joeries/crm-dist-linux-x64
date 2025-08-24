@@ -1,0 +1,90 @@
+[
+  {
+    "op_id": 1,
+    "op_guid": "5CAC08E2-5427-474A-A954-37525E2D757D",
+    "op_code": "Create",
+    "op_name": "Create",
+    "op_desc": "Create",
+    "state": 1
+  },
+  {
+    "op_id": 2,
+    "op_guid": "213F0279-3E86-43F5-953D-819ABD0B7AAE",
+    "op_code": "Delete",
+    "op_name": "Delete",
+    "op_desc": "Delete",
+    "state": 1
+  },
+  {
+    "op_id": 3,
+    "op_guid": "0CB314B1-347D-46D5-B26D-097126A54F5E",
+    "op_code": "Update",
+    "op_name": "Modify",
+    "op_desc": "Modify",
+    "state": 1
+  },
+  {
+    "op_id": 4,
+    "op_guid": "2A5B8F17-7B37-4FE3-BD1E-8E69D882570F",
+    "op_code": "List",
+    "op_name": "List",
+    "op_desc": "List",
+    "state": 1
+  },
+  {
+    "op_id": 5,
+    "op_guid": "8B3D8DEA-9A96-4567-9BB7-EA9C7E8D6C54",
+    "op_code": "Get",
+    "op_name": "Get",
+    "op_desc": "Get",
+    "state": 1
+  },
+  {
+    "op_id": 6,
+    "op_guid": "5135B908-90B6-431D-944A-DA5060C8986B",
+    "op_code": "Pass",
+    "op_name": "Pass",
+    "op_desc": "Pass",
+    "state": 1
+  },
+  {
+    "op_id": 7,
+    "op_guid": "D52F8749-FDA3-4C9A-ADDD-C08CD027F5F6",
+    "op_code": "Top",
+    "op_name": "Top",
+    "op_desc": "Top",
+    "state": 1
+  },
+  {
+    "op_id": 8,
+    "op_guid": "f5311ef8-497f-4179-aaf8-76c1cfe9936f",
+    "op_code": "Export",
+    "op_name": "Export",
+    "op_desc": "Export",
+    "state": 1
+  },
+  {
+    "op_id": 9,
+    "op_guid": "f097d51b-6841-4b83-ac6c-e3380e2eb473",
+    "op_code": "Import",
+    "op_name": "Import",
+    "op_desc": "Import",
+    "state": 1
+  },
+  {
+    "op_id": 10,
+    "op_guid": "C3ACD849-6CE8-409D-970F-26E22684AA18",
+    "op_code": "Set",
+    "op_name": "Set",
+    "op_desc": "Set",
+    "state": 1
+  },
+  {
+    "op_id": 11,
+    "op_guid": "f011d51b-6856-4baa-ac6c-e3380e2eb423",
+    "op_code": "ReSet",
+    "op_name": "ReSet",
+    "op_desc": "ReSet",
+    "state": 1
+  }
+]

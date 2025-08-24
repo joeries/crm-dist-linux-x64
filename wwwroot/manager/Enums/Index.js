@@ -6,15 +6,15 @@
         widthOffset: -210,
         heightOffset: -100,
         columns: [[
-            { field: 'chk', title: '选择', width: 50, checkbox: true },
-            { field: 'enum_code', title: '枚举编码', width: 140, sortable: false  },
-            { field: 'enum_name', title: '枚举名称', width: 140, sortable: false },
-            { field: 'enum_desc', title: '枚举说明', width: 200, align: 'center' },
-            { field: 'enum_value', title: '枚举值', width: 100, align: 'center' },
+            { field: 'chk', title: 'Select', width: 50, checkbox: true },
+            { field: 'enum_code', title: 'Code', width: 140, sortable: false  },
+            { field: 'enum_name', title: 'Name', width: 140, sortable: false },
+            { field: 'enum_desc', title: 'Desc', width: 200, align: 'center' },
+            { field: 'enum_value', title: 'Value', width: 100, align: 'center' },
             {
-                field: 'state', title: '枚举状态', width: 100, align: 'center', sortable: false,
+                field: 'state', title: 'State', width: 100, align: 'center', sortable: false,
                 formatter: function (value, rowData, rowIndex) {
-                    return 1 == value ? '启用' : '禁用';
+                    return 1 == value ? 'Enabled' : 'Disabled';
                 }
             }
         ]]

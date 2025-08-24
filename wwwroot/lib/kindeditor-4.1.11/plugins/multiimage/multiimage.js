@@ -431,7 +431,7 @@ SWFUpload.prototype.initSettings = function () {
 	// File Settings
 	this.ensureDefault("file_types", "*.*");
 	this.ensureDefault("file_types_description", "All Files");
-	this.ensureDefault("file_size_limit", 0);	// Default zero means "unlimited"
+	this.ensureDefault("file_size_limit", 0);	// Default zero means "UNLIMITED"
 	this.ensureDefault("file_upload_limit", 0);
 	this.ensureDefault("file_queue_limit", 0);
 
