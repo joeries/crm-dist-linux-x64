@@ -2,686 +2,686 @@
   {
     "assign_id": 1,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2151C55B-1E10-4E18-9931-1C3DB283F84F",
     "state": 1
   },
   {
     "assign_id": 2,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "96A6122E-7EC8-4F4E-ACD9-525333FB08FE",
     "state": 1
   },
   {
     "assign_id": 3,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "E6CABCF8-0F6D-4BDA-9AD2-75C3B1901356",
     "state": 1
   },
   {
     "assign_id": 4,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "19ADFBB6-F749-471B-86F9-9BC212F3BBC2",
     "state": 1
   },
   {
     "assign_id": 5,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "96aa40b9-9f58-4a90-86bf-895864098281",
     "state": 1
   },
   {
     "assign_id": 6,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2a18d269-7f7f-439b-81a1-7c0596a19947",
     "state": 1
   },
   {
     "assign_id": 7,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2339ca36-f340-4f02-9101-200e3950a0ad",
     "state": 1
   },
   {
     "assign_id": 8,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "b8d5534f-0d68-4e4b-8286-f152ed4077c4",
     "state": 1
   },
   {
     "assign_id": 9,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "1e82104d-5c83-4f34-a31e-d60d4236fe61",
     "state": 1
   },
   {
     "assign_id": 10,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "048f0eb4-568a-40fd-9375-6fc36cba4421",
     "state": 1
   },
   {
     "assign_id": 11,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "63b7ee7f-56cb-4d0c-bd40-a1d7e999c1e7",
     "state": 1
   },
   {
     "assign_id": 12,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "17686f97-5dc5-42af-ba06-6cadec2342dd",
     "state": 1
   },
   {
     "assign_id": 13,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "113f2465-c131-4601-8d10-b6a94041a2e6",
     "state": 1
   },
   {
     "assign_id": 14,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "c39e345d-4b02-4f87-a1c4-2868a591e502",
     "state": 1
   },
   {
     "assign_id": 15,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "3eee8b5d-ff1e-4fea-ad39-e2bcbf8f6861",
     "state": 1
   },
   {
     "assign_id": 16,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "e667f9be-68c9-49b0-b790-bab5c046d661",
     "state": 1
   },
   {
     "assign_id": 17,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "3592350d-1722-4fdf-ad3e-52009fb24343",
     "state": 1
   },
   {
     "assign_id": 18,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "91c0751b-0e45-4d3e-83ea-15f4d4b1fd78",
     "state": 1
   },
   {
     "assign_id": 19,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "f1287a38-13f5-440b-9de3-df1ccca0cde9",
     "state": 1
   },
   {
     "assign_id": 20,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "6614561a-da1e-44a9-8731-07e513866ac4",
     "state": 1
   },
   {
     "assign_id": 21,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "0c7daf25-b3a7-4784-8c89-ecdd6ae63535",
     "state": 1
   },
   {
     "assign_id": 22,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "b7c5c9b3-15c0-457e-9ec1-65f66d15901e",
     "state": 1
   },
   {
     "assign_id": 23,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "1ce60493-9235-4851-98ca-d3121cfaa77f",
     "state": 1
   },
   {
     "assign_id": 24,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "9b33eb92-f0b6-4dfa-a9b3-d1d240376be8",
     "state": 1
   },
   {
     "assign_id": 25,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "357C7255-6BBA-4278-96C8-9D7184AE9989",
     "state": 1
   },
   {
     "assign_id": 26,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "86AAB85B-373F-4246-B795-A049A2662017",
     "state": 1
   },
   {
     "assign_id": 27,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "5AC59D77-6759-45C1-B92A-D77E15564023",
     "state": 1
   },
   {
     "assign_id": 28,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "9853BE68-1CFE-4734-AA2B-60C7B1BD37A1",
     "state": 1
   },
   {
     "assign_id": 29,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "593A3090-CBD1-4E07-89FD-4555C08378D8",
     "state": 1
   },
   {
     "assign_id": 30,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "A9F01D76-DA7E-422D-899F-32986EAB2E90",
     "state": 1
   },
   {
     "assign_id": 31,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "69B92D7D-588B-41B8-BC5D-B057302DC0C9",
     "state": 1
   },
   {
     "assign_id": 32,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "8F7059BC-1DEB-43FF-9332-13150829F0E8",
     "state": 1
   },
   {
     "assign_id": 33,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "D731FEA1-4330-4CF6-8D39-E81C7B611127",
     "state": 1
   },
   {
     "assign_id": 34,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "983DB734-4E0C-40C4-BBD9-4DC11F8012D9",
     "state": 1
   },
   {
     "assign_id": 35,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "231427D9-48D5-4AA2-A3EA-584CB53CF397",
     "state": 1
   },
   {
     "assign_id": 36,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "CA74CA30-993D-4E8C-B306-6563E1AA0091",
     "state": 1
   },
   {
     "assign_id": 37,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "4CE76D33-AB38-438A-8D82-5A63E3AB953F",
     "state": 1
   },
   {
     "assign_id": 38,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "3BC4D680-4BF0-411F-A3BA-37B39B5F7504",
     "state": 1
   },
   {
     "assign_id": 39,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "792E9466-AF35-4D65-A596-AE23EEFAEE29",
     "state": 1
   },
   {
     "assign_id": 40,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "A1747CDF-8327-45B6-897D-80CADFC1ED74",
     "state": 1
   },
   {
     "assign_id": 41,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "10550700-8893-4CFB-BAD7-59EE7C35C882",
     "state": 1
   },
   {
     "assign_id": 42,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "01DB7AB3-C1DD-4DDF-8DD3-9CA7684EA7E1",
     "state": 1
   },
   {
     "assign_id": 43,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "FB9831A7-4439-4B50-9418-EB6A6BAA8417",
     "state": 1
   },
   {
     "assign_id": 44,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "8F5C6C69-3BFE-4C4D-9275-DA0725135CB4",
     "state": 1
   },
   {
     "assign_id": 45,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "DB6938E8-8FC2-4390-993B-5D02154B3DD6",
     "state": 1
   },
   {
     "assign_id": 46,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "0bb9a382-9ee8-46b5-aadf-5205d310e026",
     "state": 1
   },
   {
     "assign_id": 47,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "29ab50ba-b743-443b-ae0e-e85c33b0997d",
     "state": 1
   },
   {
     "assign_id": 48,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "a87b558c-51b0-495f-bf8a-9143a0f40b36",
     "state": 1
   },
   {
     "assign_id": 49,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "64a7773a-28c2-4d89-ac03-3942631bb364",
     "state": 1
   },
   {
     "assign_id": 50,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "6509a1a8-3b2b-4658-a4fc-d7f3dea0aca1",
     "state": 1
   },
   {
     "assign_id": 51,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "b390d6c1-2eca-428d-bb49-4b9737b75a30",
     "state": 1
   },
   {
     "assign_id": 52,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "aeddfd13-ae73-4d4b-a2f3-24d7f3d036d0",
     "state": 1
   },
   {
     "assign_id": 53,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "dd096b12-9edb-47b3-b257-26ef8686d7eb",
     "state": 1
   },
   {
     "assign_id": 54,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "cb069b75-c7b8-4ab4-8062-3dcdded8a428",
     "state": 1
   },
   {
     "assign_id": 55,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "ec9f4b22-afaa-4ef0-a8ec-4af7060fe2d7",
     "state": 1
   },
   {
     "assign_id": 56,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "26ec15a2-4dbc-45bc-8683-01e163080739",
     "state": 1
   },
   {
     "assign_id": 57,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "4ce6f097-4e2d-4a0d-a38b-1b5ae7936c15",
     "state": 1
   },
   {
     "assign_id": 58,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "c5b1081b-fb6c-42d0-bd87-b53b505b0061",
     "state": 1
   },
   {
     "assign_id": 59,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "a0a71cfc-db47-4853-b6aa-eebf83672f84",
     "state": 1
   },
   {
     "assign_id": 60,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "086cd3ab-6ac1-422c-b974-d0111d561d6c",
     "state": 1
   },
   {
     "assign_id": 61,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "767490ee-f942-4480-b18f-772812d65e6d",
     "state": 1
   },
   {
     "assign_id": 62,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "c9897a57-568f-4f99-8d93-55f8923317f5",
     "state": 1
   },
   {
     "assign_id": 63,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "24dafe51-12d8-42b4-9d2e-e7fd0e317c48",
     "state": 1
   },
   {
     "assign_id": 64,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "efe1ccb2-3e37-4f0e-9bf4-a14fc83e36f7",
     "state": 1
   },
   {
     "assign_id": 65,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "4edbe2c5-8e06-40ae-9786-6f6185124adf",
     "state": 1
   },
   {
     "assign_id": 66,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "85a95578-80fa-4cf6-a1aa-67bd2d9acb0d",
     "state": 1
   },
   {
     "assign_id": 67,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2904d6bd-1b5e-43b4-aaf2-2b995ee7667d",
     "state": 1
   },
   {
     "assign_id": 68,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "a8ff7b72-8c84-4c05-ac94-1d4edeff7f40",
     "state": 1
   },
   {
     "assign_id": 69,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "d97684c5-11a2-4a69-8ff1-ec7f0b3da3fa",
     "state": 1
   },
   {
     "assign_id": 70,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "896d1ea4-e915-4958-a601-661dec84b248",
     "state": 1
   },
   {
     "assign_id": 71,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "7530adcf-0d96-4b84-9ccb-098fa0c8d521",
     "state": 1
   },
   {
     "assign_id": 72,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "5c30b3b9-6576-4154-b748-66518fd0d72f",
     "state": 1
   },
   {
     "assign_id": 73,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2ce0cb4b-a71d-4ad2-8758-3d7b2c800565",
     "state": 1
   },
   {
     "assign_id": 74,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "3fae0404-3841-4bbc-8033-7313a366d870",
     "state": 1
   },
   {
     "assign_id": 75,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2a95953f-cfd6-48ff-85aa-6331db690a67",
     "state": 1
   },
   {
     "assign_id": 76,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "5086114a-7a3f-4ef9-ab48-7d6315404a25",
     "state": 1
   },
   {
     "assign_id": 77,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "31f63c62-a9f2-462e-815a-cecb27e94879",
     "state": 1
   },
   {
     "assign_id": 78,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "b4043cee-0456-4632-9878-0aaa78954352",
     "state": 1
   },
   {
     "assign_id": 79,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "3e170342-255b-483b-8ed5-c2106d6cfc30",
     "state": 1
   },
   {
     "assign_id": 80,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "55169ce1-3979-4149-9b48-2b696ad6a2d4",
     "state": 1
   },
   {
     "assign_id": 81,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "ad79deec-08ef-4c7e-a98e-bc38cf1d6c30",
     "state": 1
   },
   {
     "assign_id": 82,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "e9e60ea7-c716-4172-9b09-f89a15d2001c",
     "state": 1
   },
   {
     "assign_id": 83,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "c9ae4902-4841-4fcc-b92f-29965a3c6ae8",
     "state": 1
   },
   {
     "assign_id": 84,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "19d59c8d-ee99-4b95-a919-2d6b0476f270",
     "state": 1
   },
   {
     "assign_id": 85,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "bda52e86-5cb2-47ad-bad1-60eca1125f2a",
     "state": 1
   },
   {
     "assign_id": 86,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "0d8f483d-bcec-49e8-96dd-485b89189ff7",
     "state": 1
   },
   {
     "assign_id": 87,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "644c421e-3862-4d43-9c01-fd549ee1e7c8",
     "state": 1
   },
   {
     "assign_id": 88,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "5723cc24-b777-47f3-a1f9-64124121cf72",
     "state": 1
   },
   {
     "assign_id": 89,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "fa5e7bfb-1439-4b5e-9ffb-140b530287ba",
     "state": 1
   },
   {
     "assign_id": 90,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "279d7884-3272-4b35-baba-4c176dc86498",
     "state": 1
   },
   {
     "assign_id": 91,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "2d9849c1-6b23-4a9d-aad8-98ddb24cb885",
     "state": 1
   },
   {
     "assign_id": 92,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "895602c4-52c8-48c0-8fbc-a5670c595fa2",
     "state": 1
   },
   {
     "assign_id": 93,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "b5ef63df-ae3f-4093-a315-11395adfac79",
     "state": 1
   },
   {
     "assign_id": 94,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "d8a91e50-08b0-4a90-9140-9604ece6d6aa",
     "state": 1
   },
   {
     "assign_id": 95,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "a839f3ba-c175-451a-885f-02d3017b5786",
     "state": 1
   },
   {
     "assign_id": 96,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "c8f6ca4a-e87e-457d-970d-ad51a1934b06",
     "state": 1
   },
   {
     "assign_id": 97,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "13ce1ea1-1d8d-4b3e-a5e8-97002b3b832d",
     "state": 1
   },
   {
     "assign_id": 98,
     "role_guid": "00000000-0000-0000-0000-000000000000",
-    "user_guid": null,
+    "user_guid": "",
     "power_guid": "8f04b08c-a0c0-4bcb-bfe7-9fc85cf04e97",
     "state": 1
   }

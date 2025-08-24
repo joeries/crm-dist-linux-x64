@@ -1,0 +1,77 @@
+{
+  "Module": {
+    "TplCode": "Common",
+    "HasCreate": false,
+    "HasUpdate": false,
+    "HasDelete": false,
+    "HasPass": false,
+    "HasTop": false,
+    "HasImport": false,
+    "HasExport": false,
+    "HasShow": false,
+    "HasEditor": false,
+    "ObjectName": "Forwarded Records",
+    "IdKeyName": "Id",
+    "GuidKeyName": "Guid",
+    "TypeFieldName": "",
+    "SearchAttr": "style=\"height:35px;line-height:35px; padding:10px 0;\"",
+    "Tip": ""
+  },
+  "ExcelTplFileName": "",
+  "Search": [
+    {
+      "Items": [
+        {
+          "Alias": "User Phone Number",
+          "Desc": "Please type the user phone number.",
+          "Field": "mobileNo",
+          "DataType": "string",
+          "FormType": "validatebox",
+          "FormRule": "maxlength=\"20\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "Forwarded Time",
+          "Desc": "Please select the forwarded time.",
+          "Field": "forwardedTime",
+          "DataType": "Datetime",
+          "FormType": "start_end_date",
+          "FormRule": "maxlength=\"10\" style=\"width:138px;\""
+        },
+        {
+          "Alias": "State",
+          "Desc": "Please select the state.",
+          "Field": "state",
+          "DataType": "string",
+          "FormType": "yes_no",
+          "FormData": [
+            {
+              "id": "",
+              "text": "===Not Specified==="
+            },
+            {
+              "id": "0",
+              "text": "Unsent"
+            },
+            {
+              "id": "1",
+              "text": "Sending"
+            },
+            {
+              "id": "2",
+              "text": "Succeeded"
+            },
+            {
+              "id": "3",
+              "text": "Failed"
+            }
+          ],
+          "FormRule": ""
+        }
+      ]
+    }
+  ],
+  "Save": [
+    
+  ],
+  "Show": []
+}

@@ -49,7 +49,7 @@
           "Field": "receivingMobileNo",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": ""
+          "FormRule": "required=\"true\" missingmessage=\"Required.\""
         },
         {
           "Alias": "Phone Identity",
@@ -57,7 +57,15 @@
           "Field": "deviceIdentity",
           "DataType": "string",
           "FormType": "validatebox",
-          "FormRule": ""
+          "FormRule": "required=\"true\" missingmessage=\"Required.\""
+        },
+        {
+          "Alias": "Assigned to",
+          "Desc": "Plese select the user.",
+          "Field": "userName",
+          "DataType": "string",
+          "FormType": "combobox",
+          "FormRule": "url=\"{ApiProxyUrl}?apiName=Manager/User/ListCombobox&showDefault=true&defaultText=NONE&idField=user_name\""
         }
       ]
     }
